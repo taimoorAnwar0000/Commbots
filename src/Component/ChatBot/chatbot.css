@@ -1,0 +1,61 @@
+.chat-bot-Row1{
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+.chat-bot-Row1 h6 {
+
+font-size: 22px;
+font-weight: 400;
+color: #555555;
+
+
+}
+.chat-bot-Row1 h4 {
+
+    font-size: 22px;
+    font-weight: 500;
+    color: #000000;
+    
+    
+    }
+
+
+
+.chatbot-icon-text{
+    font-size: 30px;
+    font-weight: 500;
+    color: #FFFFFF;
+    /* padding: 10px; */
+    padding-left: 10px;
+    padding-top: 10px;
+
+}
+.chat-bot-row2{
+    background: #333333;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    border-radius: 10px;
+}
+.add-button{
+    background: #32BE8A;
+    border-radius: 30px;
+
+
+}
+.chatbot-img{
+    /* padding-bottom: 10px; */
+    align-items: center;
+}
+.chatbot-img-text{
+    display: flex;
+    align-items: center;
+}
+.Home-card{
+
+    background: #32BE8A4D;
+
+}
