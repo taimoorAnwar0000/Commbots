@@ -7,6 +7,20 @@ import { RiDeleteBin6Line } from 'react-icons/ri'
 import { GrEdit } from 'react-icons/gr'
 import Chatbot from '../images/chatbot.png'
 import Add from '../images/Add.png'
+import Agent from '../images/agent.png'
+import Copy from '../images/copy.png'
+import Delete from '../images/delete.png'
+import Count from '../images/01.png'
+import Edit from '../images/edit.png'
+import Mobile from '../images/mobile.png'
+import Reset from '../images/reset.png'
+
+import ChatBotcard from './ChatBotcard'
+
+
+
+
+
 
 
 
@@ -25,7 +39,7 @@ const ChatBot = () => {
         </Row>
 
         <Row className="chat-bot-row2">
-          <Col lg={10} className="chatbot-img-text">
+          <Col lg={10} md={10} sm={10} xs={10} className="chatbot-img-text">
             <img
               src={Chatbot}
               alt="Girl in a jacket"
@@ -35,30 +49,110 @@ const ChatBot = () => {
             />{' '}
             <span className="chatbot-icon-text"> Chatbots</span>
           </Col>
-          <Col lg={2}>
-            <Button className="add-button">
+          <Col lg={2}  md={2} sm={2}xs={2} >
+            <Button className="add-button"   style={{  background: '#32be8a4d' }} >
               <img src={Add} alt="Girl in a jacket" width="18" height="18" />
               Add New
             </Button>
           </Col>
         </Row>
         <Row>
-          <Col lg={8}>
-            <h2> Main Bots</h2> <hr />
+          <Col lg={8} md={8} sm={8} xs={8}>
+
+        <div className='d-flex mt-4  chatbottext '  ><h6>Main Bots</h6> <    h4  className='Linked'  >Linked Bots</h4></div>
+          
+
+            <Row>  <hr/>
+              
+           <Col><ChatBotcard/></Col>
+           <Col><ChatBotcard/></Col>
+           <Col><ChatBotcard/></Col>
 
 
+              
+                </Row>
+                <Row className='mt-3'>  
+              
+              <Col><ChatBotcard/></Col>
+              <Col><ChatBotcard/></Col>
+              <Col><ChatBotcard/></Col>
+   
+   
+                 
+                   </Row>
 
-            <Card style={{ width: '18rem' }} className='Home-card'  >
-  <Card.Body>
-    <Card.Title> <BsFillPlayFill style={{color:'#00784B'}}  />  Ajhvx</Card.Title>
-    <Card.Subtitle className="mb-2 text-muted pt-2">Chat agent</Card.Subtitle>
-  
-    <Card.Link href="#"><RiDeleteBin6Line  style={{color:'#D91D00'}}  /></Card.Link>
-    <Card.Link href="#">Another Link</Card.Link>
-  </Card.Body>
-</Card>
+             <Row className='mt-3'>  
+              
+           <Col><ChatBotcard/></Col>
+           <Col><ChatBotcard/></Col>
+           <Col><ChatBotcard/></Col>
+
+
+              
+                </Row>
+              
+           
+
+          
           </Col>
-          <Col lg={4}></Col>
+          <Col lg={4} md={4} sm={4} xs={12}  >
+            
+            <div>
+
+            <img
+              src={Mobile}
+              alt="Girl in a jacket"
+              width="365"
+              height="737"
+              className="chatbot-img py-5 px-3 "
+            />
+
+
+            </div>
+         
+<div    className='phone-button'  >
+<div > <Button style={{background: '#0061BB' ,width:'100px' ,height:'40px' ,color:'black'
+}}>
+
+<img
+              src={Edit}
+              alt="Girl in a jacket"
+              width="24"
+              height="24 "
+              // className="chatbot-img py-5 px-3 "
+            /> Edit
+</Button  >   </div>
+
+ <div >
+
+
+ <Button  style={{background: 'white' ,width:'100px',height:'40px',color:'black',border:'none'
+}}    >
+
+<img
+              src={Reset}
+              alt="Girl in a jacket"
+              width="22"
+              height="18 "
+              className="chatbot-img "
+            /> Reset
+</Button>
+
+
+
+ </div>
+
+
+        
+       
+</div>
+   
+
+            
+            
+            
+            
+            </Col>
         </Row>
       </Container>
     </div>
