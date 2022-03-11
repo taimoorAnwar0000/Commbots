@@ -5,7 +5,7 @@ import LoginImageForm from '../images/commbot-login.png'
 import Home from '../images/home.png'
 import Chat from '../images/chat.png'
 import './Navbar.css'
-import Bell from '../images/bell.png'
+import Bell from '../images/Bell.png'
 import Admin from '../images/admin.png'
 import Messege from '../images/msg.png'
 import Setting from '../images/setting.png'
@@ -20,10 +20,10 @@ return (
  <Col lg={9} md={12} sm={12} xs={12}    >
     <Navbar bg="white" expand="lg">
     <Container fluid>
-      <Navbar.Brand href="#">  <img src={LoginImageForm}
+      <Navbar.Brand href="#"    >  <img src={LoginImageForm}
                 alt="Girl in a jacket"
                 width="221"
-              
+                className='mr-5'
                 height="49"/>   </Navbar.Brand>
        <Navbar.Toggle aria-controls="navbarScroll" />
       <Navbar.Collapse id="navbarScroll">
@@ -31,15 +31,8 @@ return (
         navbarScroll
         >
           <Nav.Link href="#action1 "  className='mr-5' >  Home</Nav.Link>
-          <Nav.Link href="#action2">  
-          
-          <img src={Chat}
-                alt="Girl in a jacket"
-                width="23"
-            
-                height="24"/>
-          
-          Chat Center  </Nav.Link>
+          <Nav.Link href="#action1 "  className='mr-5' >  ChatCenter</Nav.Link>
+
           <NavDropdown title="Messege" id="navbarScrollingDropdown">
             <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
             <NavDropdown.Item href="#action4">Another action</NavDropdown.Item>
@@ -73,22 +66,19 @@ return (
               Something else here
             </NavDropdown.Item>
           </NavDropdown>
-
-        
-        </Nav>
-        {/* <span className='messege-icon' >                
+          <span className='messege-icon ml-5' >                
           <img src={Bell}
                 alt="Girl in a jacket"
-                width="40"
+                width="30"
             
-                height="50"/>
+                height="40"/>
                 
                 <img
                 src={Admin}
                 alt="Girl in a jacket"
-                width="50"
+                width="40"
                 className='image-icon'
-                height="50"/>
+                height="40"/>
                 
                 
           <NavDropdown title="Admin" id="navbarScrollingDropdown"  className='pt-2' >
@@ -99,7 +89,11 @@ return (
             Something else here
           </NavDropdown.Item>
         </NavDropdown>
-                </span>    */}
+                </span>   
+                
+        
+        </Nav>
+       
       </Navbar.Collapse>
     </Container>
   </Navbar>

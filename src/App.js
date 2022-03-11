@@ -14,6 +14,9 @@ import Sidebar from './Component/Sidebar/Sidebar';
 import ChatBotcard from './Component/ChatBot/ChatBotcard';
 import ChatCenter250 from './Component/ChatCenter/ChatCenter250';
 import ChartCard from './Component/ChatCenter/ChartCard';
+import Chat from './Component/ChatCenter/Chat';
+import ChatCenter from './Component/ChatCenter/ChatCenter';
+
 
 
 
@@ -22,6 +25,7 @@ import ChartCard from './Component/ChatCenter/ChartCard';
 function App() {
   return (
     <Router>
+      {/* <NavbarChatbot/> */}
     <Routes>
       <Route path="/login" element={<Login />} />
       <Route path="/chatbot" element={<ChatBot />} />
@@ -30,6 +34,10 @@ function App() {
       <Route path="/card" element={<ChatBotcard />} />
       <Route path="/chatCenter" element={<ChatCenter250   />} />
       <Route path="/chatcard" element={<ChartCard   />} />
+      <Route path="/chat" element={<Chat   />} />
+      <Route path="/mainchat" element={<ChatCenter/>} />
+
+
 
 
 

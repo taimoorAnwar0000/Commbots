@@ -20,7 +20,7 @@ const Login = () => {
               <img
                 src={PlatformImage}
                 alt="Girl in a jacket"
-                width="761"
+                width="661"
                 height="506"
               />
             </div>

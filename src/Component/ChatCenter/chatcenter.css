@@ -1,3 +1,67 @@
 .chat250image{
     margin-left: 10px;
 }
+.profile-text{
+   padding-left: 10px;
+}
+.ChartCard{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+.MM-clothing{
+    display: flex;
+}
+
+.mmtext{
+    margin-left: 30px;
+    border: 1px solid #A9A9A9;
+    border-radius: 5px;
+    color: #A9A9A9;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.date{
+    margin-left: 20px;
+}
+.date2{
+    margin-left: 150px;
+ 
+}
+.button{
+    background-color: white;
+    color:#32BE8A;
+    border-color: #32BE8A;
+    height: 30px;
+    
+}
+.switch{
+    display: flex;
+    margin-bottom: 5px;
+}
+.icon{
+    margin-left: 15px;
+}
+.bell{
+    display: flex;
+    
+}
+.name{
+margin: 20px;
+
+}
+.mainCHat{
+    background:#E5E5E5 ;
+    padding-top: 30px;
+}
+.chat-card-main{
+    margin: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: white;
+  padding-left: 10px;
+  
+}
+.all-card{
+    padding-top: 10px;
+}

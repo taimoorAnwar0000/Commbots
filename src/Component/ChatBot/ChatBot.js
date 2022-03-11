@@ -39,7 +39,7 @@ const ChatBot = () => {
         </Row>
 
         <Row className="chat-bot-row2">
-          <Col lg={10} md={10} sm={10} xs={10} className="chatbot-img-text">
+          <Col lg={10} md={10} sm={8} xs={10} className="chatbot-img-text">
             <img
               src={Chatbot}
               alt="Girl in a jacket"
@@ -57,25 +57,30 @@ const ChatBot = () => {
           </Col>
         </Row>
         <Row>
-          <Col lg={8} md={8} sm={8} xs={8}>
+          <Col lg={8} md={12} sm={12} xs={12}>
 
         <div className='d-flex mt-4  chatbottext '  ><h6>Main Bots</h6> <    h4  className='Linked'  >Linked Bots</h4></div>
           
 
             <Row>  <hr/>
               
-           <Col><ChatBotcard/></Col>
-           <Col><ChatBotcard/></Col>
-           <Col><ChatBotcard/></Col>
-
+           <Col className='mt-2'lg={4} md={6} sm={12}><ChatBotcard/></Col>
+           <Col className='mt-2' lg={4} md={6} sm={12}><ChatBotcard/></Col>
+           <Col className='mt-2' lg={4} md={6} sm={12}><ChatBotcard/></Col>
+           <Col   className='mt-2' ><ChatBotcard/></Col>
+              <Col lg={4} md={6} sm={12} className='mt-2'><ChatBotcard/></Col>
+              <Col lg={4} md={6} sm={12} className='mt-2'><ChatBotcard/></Col>
+              <Col className='mt-2'lg={4} md={6} sm={12}><ChatBotcard /></Col>
+           <Col className='mt-2'lg={4} md={6} sm={12}><ChatBotcard/></Col>
+           <Col className='mt-2'lg={4} md={6} sm={12}><ChatBotcard/></Col>
 
               
                 </Row>
-                <Row className='mt-3'>  
+                {/* <Row className='mt-3'>  
               
-              <Col><ChatBotcard/></Col>
-              <Col><ChatBotcard/></Col>
-              <Col><ChatBotcard/></Col>
+              <Col lg={4} md={6} sm={12}><ChatBotcard/></Col>
+              <Col lg={4} md={6} sm={12}><ChatBotcard/></Col>
+              <Col lg={4} md={6} sm={12}><ChatBotcard/></Col>
    
    
                  
@@ -89,13 +94,13 @@ const ChatBot = () => {
 
 
               
-                </Row>
+                </Row> */}
               
            
 
           
           </Col>
-          <Col lg={4} md={4} sm={4} xs={12}  >
+          <Col lg={4} md={12} sm={12} xs={12}  >
             
             <div>
 
