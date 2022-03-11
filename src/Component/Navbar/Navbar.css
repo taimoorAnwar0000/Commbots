@@ -1,0 +1,27 @@
+.messege-icon{
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.image-icon{
+    padding-top: 10px;
+}
+.navbar-row-1{
+    display: flex;
+}
+.item-end{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.selector{
+    border: 0px;
+    
+}
+
+@media  (max-width: 1000px) {
+    .Sidebar {
+      display: none;
+    }
+  }
