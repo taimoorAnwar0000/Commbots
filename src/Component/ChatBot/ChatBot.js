@@ -18,17 +18,13 @@ import Reset from '../images/reset.png'
 import ChatBotcard from './ChatBotcard'
 
 
+const ChatBot = (props) => {
 
+console.log(props.flag)
 
-
-
-
-
-
-const ChatBot = () => {
   return (
-    <div>
-      <Container>
+    <div className={props.state==false?'chatbotmainclass':'chatbotmain2'}>
+      <Container fluid>
         <Row>
           <span className="chat-bot-Row1">
             
@@ -39,22 +35,23 @@ const ChatBot = () => {
         </Row>
 
         <Row className="chat-bot-row2">
-          <Col lg={10} md={10} sm={8} xs={10} className="chatbot-img-text">
+          <div className="chatbot-img-text">
+            <div>
             <img
               src={Chatbot}
               alt="Girl in a jacket"
-              width="48"
-              height="38"
+              width="50"
+              height="50"
               className="chatbot-img"
-            />{' '}
-            <span className="chatbot-icon-text"> Chatbots</span>
-          </Col>
-          <Col lg={2}  md={2} sm={2}xs={2} >
+            />
+            <span className="chatbot-icon-text"> Chatbots</span></div>
+        
+          <div >
             <Button className="add-button"   style={{  background: '#32be8a4d' }} >
               <img src={Add} alt="Girl in a jacket" width="18" height="18" />
               Add New
             </Button>
-          </Col>
+          </div></div>
         </Row>
         <Row>
           <Col lg={8} md={12} sm={12} xs={12}>
@@ -76,55 +73,30 @@ const ChatBot = () => {
 
               
                 </Row>
-                {/* <Row className='mt-3'>  
-              
-              <Col lg={4} md={6} sm={12}><ChatBotcard/></Col>
-              <Col lg={4} md={6} sm={12}><ChatBotcard/></Col>
-              <Col lg={4} md={6} sm={12}><ChatBotcard/></Col>
-   
-   
-                 
-                   </Row>
-
-             <Row className='mt-3'>  
-              
-           <Col><ChatBotcard/></Col>
-           <Col><ChatBotcard/></Col>
-           <Col><ChatBotcard/></Col>
-
-
-              
-                </Row> */}
-              
-           
-
-          
+               
           </Col>
           <Col lg={4} md={12} sm={12} xs={12}  >
+            <div className='mobile-portion'>
             
-            <div>
+            <div  className='mobile-pic'>
 
             <img
               src={Mobile}
               alt="Girl in a jacket"
               width="365"
               height="737"
-              className="chatbot-img py-5 px-3 "
-            />
-
-
-            </div>
+              className="chatbot-img-mobile py-5  " />
+  </div>
          
 <div    className='phone-button'  >
-<div > <Button style={{background: '#0061BB' ,width:'100px' ,height:'40px' ,color:'black'
-}}>
+<div > <Button style={{background: '#0061BB' ,width:'100px' ,height:'40px' ,color:'black'}}>
 
 <img
-              src={Edit}
+src={Edit}
               alt="Girl in a jacket"
               width="24"
               height="24 "
-              // className="chatbot-img py-5 px-3 "
+            
             /> Edit
 </Button  >   </div>
 
@@ -151,7 +123,7 @@ const ChatBot = () => {
         
        
 </div>
-   
+</div>
 
             
             

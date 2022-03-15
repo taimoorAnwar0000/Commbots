@@ -22,23 +22,28 @@ const ChatBotcard = () => {
   return (
     <div> <Card style={{  background: '#32be8a4d' }} className='Home-card'  >
     <Card.Body>
-      <Card.Title> <BsFillPlayFill style={{color:'#00784B'}}  />  Ajhvx     <span   className='Count' >    <img
+      <Card.Title> 
+        
+        
+        <div className='ajhv'>
+        
+      <div> <BsFillPlayFill style={{color:'#00784B'}}  />Ajhvx </div>     <div>    <img
                 src={Count}
                 alt="Girl in a jacket"
                 width="24"
                 height="24"
                 className="chatbot-img"
-              /> </span>    </Card.Title> 
+              /> </div>  </div> </Card.Title> 
       <Card.Subtitle className="mb-2 text-muted pt-2">  <img
                 src={Agent}
                 alt="Girl in a jacket"
                 width="13"
                 height="18"
                 className="chatbot-img"
-              />{' '}   Chat agent</Card.Subtitle> 
+              />   Chat agent</Card.Subtitle> 
               <br/> 
     <Row> 
-      <Col>   <Card.Link href="#"><img
+      <Col lg={4} md={4} sm={3} xs={3}>   <Card.Link href="#"><img
                 src={Copy}
                 alt="Girl in a jacket"
                 width="60"
@@ -47,19 +52,19 @@ const ChatBotcard = () => {
               /></Card.Link></Col>
   
   
-  <Col>      <Card.Link href="#"><img
+  <Col lg={4} md={4} sm={3} xs={3}>      <Card.Link href="#"><img
                 src={Edit}
                 alt="Girl in a jacket"
                 width="60"
                 height="60"
                 className="chatbot-img"
               /></Card.Link></Col>
-  <Col> <Card.Link href="#"><img
+  <Col lg={4} md={4} sm={3} xs={3}> <Card.Link href="#"><img
                 src={Delete}
                 alt="Girl in a jacket"
                 width="60"
                 height="60"
-                className="chatbot-img"
+                className="chatbot-img-delete"
               /></Card.Link></Col>
   
   

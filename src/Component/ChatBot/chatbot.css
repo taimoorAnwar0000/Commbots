@@ -8,11 +8,25 @@
   font-size: 22px;
   font-weight: 400;
   color: #555555;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 .chat-bot-Row1 h4 {
   font-size: 22px;
   font-weight: 500;
   color: #000000;
+  padding-left: 10px;
+}
+.ajhv {
+  display: flex;
+  justify-content: space-between;
+}
+.chatbot-img-delete {
+  padding-right: 10px;
+}
+.Card-link {
+  display: flex;
+  justify-content: space-between;
 }
 
 .chatbot-icon-text {
@@ -29,37 +43,108 @@
   align-items: center;
   height: 100px;
   border-radius: 10px;
+  margin-right: 100px !important;
 }
 .add-button {
   background: #32be8a;
-  border-radius: 30px;
+  border-radius: 30px !important;
+  border: none !important;
+  margin-left: 100px;
+}
+.add-button img {
+  margin-right: 10px;
+}
+.btn {
+  border-radius: 30px !important;
+}
+
+.btn img {
+  margin-right: 5px !important;
+}
+.chatbot-img-mobile {
+  margin-left: 50px;
+}
+.mobile-portion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .chatbot-img-text {
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 .Home-card {
   background: #32be8a4d;
 }
+.chatbotmainclass {
+  margin-left: 320px;
+}
 .Count {
   margin-left: 120px;
 }
-.phone-button{
-    display: flex;justify-content: center;
-    align-items: center;
+.phone-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 100px;
 }
-.Chatbotbutton{
-    background: red;
+.Chatbotbutton {
+  background: red;
 }
-.Linked{
-    font-size: 30px;
-    font-weight: 500;
-    padding-left: 50px;
-    color: #A9A9A9;
+.chatbotmain2 {
+  margin-left: 30px;
+}
+.Linked {
+  font-size: 30px;
+  font-weight: 500;
+  padding-left: 50px;
+  color: #a9a9a9;
 }
 .chatbottext h6 {
-    font-size: 30px;
-    font-weight: 500;
-    /* padding-left: 50px; */
+  font-size: 30px;
+  font-weight: 500;
+  /* padding-left: 50px; */
+}
+
+@media (max-width: 1200px) {
+  .chat-bot-row2 {
+    margin-right: 0px !important;
+  }
+}
+
+@media (min-width: 770px) and (max-width: 850px) {
+  .mobile-pic {
+    margin-left: 140px;
+  }
+}
+@media (min-width: 520px) and (max-width: 760px) {
+  .mobile-pic {
+    margin-left: 50px;
+  }
+}
+@media (min-width: 320px) and (max-width: 520px) {
+  .mobile-pic {
+    margin-left: 20px;
+  }
+}
+
+@media (min-width: 1250px) and (max-width: 1550px) {
+  .add-button {
+    margin-left: 50px;
+  }
+}
+
+@media (max-width: 1720px) {
+  .chat-bot-row2 {
+    margin-right: 0px;
+  }
+}
+
+@media (max-width: 1250px) {
+  .add-button {
+    margin-left: 0px;
+  }
 }

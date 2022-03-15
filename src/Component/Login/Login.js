@@ -20,8 +20,9 @@ const Login = () => {
               <img
                 src={PlatformImage}
                 alt="Girl in a jacket"
-                width="661"
-                height="506"
+                width="461"
+                height="366"
+
               />
             </div>
           </Col>
@@ -32,10 +33,11 @@ const Login = () => {
                 alt="Girl in a jacket"
                 width="433"
                 height="100"
+                className='loginformimage'
               />
 
               <h1>Welcome Back!</h1>
-              <hr style={{width:'60px', color:'#32BE8A' }}/>
+              <hr style={{ width: '60px', color: '#32BE8A' }} />
 
               <div className="user">
                 <img src={User} alt="Girl in a jacket" width="38" height="40" />{' '}
@@ -58,12 +60,12 @@ const Login = () => {
                 </Button>
               </div>
               <div className='form-footer-text' >
-         
-         Powered By
-         <span  className='smartvision' >  smartvision.ae </span>
-       </div>
+
+                Powered By
+                <span className='smartvision' >  smartvision.ae </span>
+              </div>
             </div>
-         
+
           </Col>
         </Row>
       </div>
