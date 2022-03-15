@@ -89,7 +89,7 @@ console.log(props.flag)
   </div>
          
 <div    className='phone-button'  >
-<div > <Button style={{background: '#0061BB' ,width:'100px' ,height:'40px' ,color:'black'}}>
+<div > <button className='button_close' style={{background: '#0061BB' ,width:'100px' ,height:'40px' ,color:'black'}}>
 
 <img
 src={Edit}
@@ -98,12 +98,12 @@ src={Edit}
               height="24 "
             
             /> Edit
-</Button  >   </div>
+</button >   </div>
 
  <div >
 
 
- <Button  style={{background: 'white' ,width:'100px',height:'40px',color:'black',border:'none'
+ <button className='button_close'  style={{background: 'white' ,width:'100px',height:'40px',color:'black',border:'none'
 }}    >
 
 <img
@@ -113,7 +113,7 @@ src={Edit}
               height="18 "
               className="chatbot-img "
             /> Reset
-</Button>
+</button>
 
 
 

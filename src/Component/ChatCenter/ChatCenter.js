@@ -11,7 +11,7 @@ import P2 from "../images/p2.png";
 import P3 from "../images/p3.png";
 import "./chatcenter.scss";
 
-const ChatCenter = () => {
+const ChatCenter = (props) => {
   const array = [
     { image: CardProfile, name: "Robert Fox", text: "Draft1-changes-red" },
     { image: P1, name: "Jerome Bell", text: "Draft1-changes-red" },
@@ -24,6 +24,9 @@ const ChatCenter = () => {
   ];
 
   return (
+
+<div className={props.state==false?'chatbotmainclass':'chatbotmain2'}>
+
     <div className="mainCHat">
       <Container fluid>
         <Row>
@@ -58,6 +61,7 @@ const ChatCenter = () => {
 
 
       </Container>
+    </div>
     </div>
   );
 };

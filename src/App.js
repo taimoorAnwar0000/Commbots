@@ -28,7 +28,7 @@ import Graph from './Component/Graph/Graph'
 
 function App() {
 
-const [state,setState]=useState(false)
+const [state,setState]=useState(true)
 
 console.log('stt',state);
 
@@ -45,13 +45,18 @@ console.log('stt',state);
     <Routes>
       <Route path="/login" element={<Login />} />
       <Route path="/chatbot" element={<ChatBot  state={state}/>} />
-      {/* <Route path="/navbar" element={<NavbarChatbot />} /> */}
+    
       <Route path="/sidebar" element={<Sidebar />} />
       <Route path="/card" element={<ChatBotcard />} />
       <Route path="/chatCenter" element={<ChatCenter250   />} />
       <Route path="/chatcard" element={<ChartCard   />} />
       <Route path="/chat" element={<Chat   />} />
-      <Route path="/mainchat" element={<ChatCenter/>} />
+      <Route path="/mainchat" element={<ChatCenter state={state}/>} />
+      <Route path="/" element={<Graph state={state} /> } />
+      
+
+
+
 
 
 
@@ -64,7 +69,7 @@ console.log('stt',state);
      </Routes>
    </Router>
 
- <Graph/> 
+ 
 
    </>
   );

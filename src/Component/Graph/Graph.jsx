@@ -87,7 +87,7 @@ export const data = {
     },
   ],
 };
-const Graph = () => {
+const Graph = (props) => {
   const [val, setVal] = useState();
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
@@ -110,6 +110,10 @@ const Graph = () => {
 
   return (
     <>
+
+<div className={props.state==false?'chatbotmainclass':'chatbotmain2'}>
+
+
       <div className="main_bar">
         <div className="top_bar">
           <div className="bar_home">
@@ -207,83 +211,87 @@ const Graph = () => {
           </div>
         </div>
       </div>
-      
+
       <div className="main_graph">
         <div className="graph_sidebar">
-          <div className="sidebar_content">
-            {/* icon 1 */}
+          <div className="sliderbar_start">
+            <div className="sidebar_content">
+              {/* icon 1 */}
 
-            <div className="slidebar_icons">
-              <img src={get} />
+              <div className="slidebar_icons">
+                <img src={get} />
 
-              <div className="icon_text">
-                <div className="icon_title">Recieved messages</div>
+                <div className="icon_text">
+                  <div className="icon_title">Recieved messages</div>
 
-                <div className="icon_number">994</div>
+                  <div className="icon_number">994</div>
+                </div>
+              </div>
+
+              {/* icon 2 */}
+
+              <div className="slidebar_icons">
+                <img src={sent} />
+
+                <div className="icon_text">
+                  <div className="icon_title">Sent Messages</div>
+
+                  <div className="icon_number">536</div>
+                </div>
+              </div>
+
+              {/* icon 3 */}
+
+              <div className="slidebar_icons">
+                <img src={group} />
+
+                <div className="icon_text">
+                  <div className="icon_title">Session Messages</div>
+
+                  <div className="icon_number">177</div>
+                </div>
+              </div>
+
+              {/* icon 4 */}
+
+              <div className="slidebar_icons">
+                <img src={contact} />
+
+                <div className="icon_text">
+                  <div className="icon_title_special ">
+                    Monthly Active Users
+                  </div>
+
+                  <div className="icon_number">196</div>
+                </div>
+              </div>
+
+              {/* icon 5 */}
+
+              <div className="slidebar_icons">
+                <img src={messages} />
+
+                <div className="icon_text">
+                  <div className="icon_title">Conversations</div>
+
+                  <div className="icon_number">922</div>
+                </div>
+              </div>
+
+              {/* icon 6 */}
+
+              <div className="slidebar_icons">
+                <img src={template} />
+
+                <div className="icon_text">
+                  <div className="icon_title">Templates Sent</div>
+
+                  <div className="icon_number">429</div>
+                </div>
               </div>
             </div>
-
-            {/* icon 2 */}
-
-            <div className="slidebar_icons">
-              <img src={sent} />
-
-              <div className="icon_text">
-                <div className="icon_title">Sent Messages</div>
-
-                <div className="icon_number">536</div>
-              </div>
-            </div>
-
-            {/* icon 3 */}
-
-            <div className="slidebar_icons">
-              <img src={group} />
-
-              <div className="icon_text">
-                <div className="icon_title">Session Messages</div>
-
-                <div className="icon_number">177</div>
-              </div>
-            </div>
-
-            {/* icon 4 */}
-
-            <div className="slidebar_icons">
-              <img src={contact} />
-
-              <div className="icon_text">
-                <div className="icon_title_special ">Monthly Active Users</div>
-
-                <div className="icon_number">196</div>
-              </div>
-            </div>
-
-            {/* icon 5 */}
-
-            <div className="slidebar_icons">
-              <img src={messages} />
-
-              <div className="icon_text">
-                <div className="icon_title">Conversations</div>
-
-                <div className="icon_number">922</div>
-              </div>
-            </div>
-
-            {/* icon 6 */}
-
-            <div className="slidebar_icons">
-              <img src={template} />
-
-              <div className="icon_text">
-                <div className="icon_title">Templates Sent</div>
-
-                <div className="icon_number">429</div>
-              </div>
-            </div>
-          </div>
         </div>
+          </div>
 
         <div className="graph_content">
           <div className="graph_start">
@@ -420,6 +428,9 @@ const Graph = () => {
           </div>
         </div>
       </div>
+
+      </div>
+
     </>
   );
 };

@@ -17,6 +17,8 @@ import { MdPersonOutline } from 'react-icons/md';
 import { Dropdown } from 'react-bootstrap'
 import { ButtonGroup } from 'react-bootstrap'
 import {BsArrow90DegRight} from 'react-icons/bs'
+import {MdOutlineBookmarkBorder} from 'react-icons/md'
+
 
 const Chat = () => {
   return (
@@ -54,7 +56,7 @@ const Chat = () => {
               <button className='button_close'  > Closed  </button>
             </div>  </div>
 
-          <div> <BsArrow90DegRight style={{color:'#F8D418'}}/>    <MdPersonOutline /> <AiOutlineFile className='icon' /> <ImAttachment className='icon' /><BsShare className='icon' /> </div>  </div>
+          <div className='icon'> <BsArrow90DegRight style={{color:'#F8D418'}}/><MdPersonOutline /> <AiOutlineFile/><MdOutlineBookmarkBorder /><ImAttachment /><BsShare /> </div>  </div>
 
         <hr></hr>
 
