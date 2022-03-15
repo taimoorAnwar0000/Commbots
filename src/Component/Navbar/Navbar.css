@@ -6,8 +6,15 @@
 .offcanvas-start {
   width: 600px !important;
 }
+.navbar-data {
+  display: flex;
+}
 .navbar-brand {
   height: 1px;
+}
+.card-icon-div {
+  display: flex;
+  justify-content: space-between;
 }
 .nav-link {
   margin-right: 20px;
@@ -21,6 +28,10 @@
 .fa {
   position: absolute;
   left: 5px;
+}
+.label {
+  /* background: white; */
+  color: aliceblue;
 }
 .item-end {
   margin-left: 300px;
@@ -113,8 +124,11 @@
     display: none;
   }
 }
-@media (min-width: 991px) {
+@media (max-width: 991px) {
   .mainSidebar {
-    display: none;
+    display: none !important ;
+  }
+  .chatbotmainclass {
+    margin-left: 30px;
   }
 }

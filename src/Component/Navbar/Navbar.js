@@ -87,81 +87,98 @@ return (
                 className='image-icon  mr-5'
                 height="30"/>   <Nav.Link href="#action1 "  className='' >  ChatCenter</Nav.Link>  </div>
 
-          
-          
-
-          <img
+      <div className='navbar-data'>    
+     <div><img
                 src={Messege}
                 alt="Girl in a jacket"
                 width="25"
                 className='image-icon '
-                height="30"/> <NavDropdown title="Messege" id="navbarScrollingDropdown">
+                height="30"/></div>     
+<div> <NavDropdown title="Messege" id="navbarScrollingDropdown">
             <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
             <NavDropdown.Item href="#action4">Another action</NavDropdown.Item>
             <NavDropdown.Divider />
             <NavDropdown.Item href="#action5">
               Something else here
             </NavDropdown.Item>
-          </NavDropdown>
-          <img
+          </NavDropdown></div> </div>
+          
+
+          <div className='navbar-data'> 
+     <div><img
                 src={Chatbot}
                 alt="Girl in a jacket"
                 width="40"
                 className='image-icon'
-                height="40"/>
-          <NavDropdown title="Chatbot" id="navbarScrollingDropdown   "  className='mr-5' >
+                height="40"/> </div>     
+<div>          <NavDropdown title="Chatbot" id="navbarScrollingDropdown   "  className='mr-5' >
             <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
             <NavDropdown.Item href="#action4">Another action</NavDropdown.Item>
             <NavDropdown.Divider />
             <NavDropdown.Item href="#action5">
               Something else here
             </NavDropdown.Item>
-          </NavDropdown>
-          <img
+          </NavDropdown></div> </div>
+
+
+          <div className='navbar-data'>
+<div >   <img
                 src={Setting}
                 alt="Girl in a jacket"
                 width="30"
                 className='image-icon'
-                height="35"/>
-          <NavDropdown title="Setting" id="navbarScrollingDropdown">
-            <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-            <NavDropdown.Item href="#action4">Another action</NavDropdown.Item>
-            <NavDropdown.Divider />
-            <NavDropdown.Item href="#action5">
-              Something else here
-            </NavDropdown.Item>
-          </NavDropdown>
-          <img
+                height="35"/></div> <div>   <NavDropdown title="Setting" id="navbarScrollingDropdown">
+                <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
+                <NavDropdown.Item href="#action4">Another action</NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="#action5">
+                  Something else here
+                </NavDropdown.Item>
+              </NavDropdown></div>
+
+          </div>
+
+       <div>
+
+
+       </div>
+
+
+       <div className='navbar-data'>
+         <div>  <img
                 src={Report}
                 alt="Girl in a jacket"
                 width="30"
                 className='image-icon'
-                height="35"/>
-          <NavDropdown title="Reports" id="navbarScrollingDropdown">
-            <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-            <NavDropdown.Item href="#action4">Another action</NavDropdown.Item>
-            <NavDropdown.Divider />
-            <NavDropdown.Item href="#action5">
-              Something else here
-            </NavDropdown.Item>
-          </NavDropdown>
+                height="35"/> </div> <div><NavDropdown title="Reports" id="navbarScrollingDropdown">
+                <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
+                <NavDropdown.Item href="#action4">Another action</NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="#action5">
+                  Something else here
+                </NavDropdown.Item>
+              </NavDropdown></div>
+       </div>
+         
+         
+          
 
-          <div className='Admin-right'>
-          <span className='messege-icon ml-5' >                
+          <div className='Admin-right d-flex'>
+          <div >                
           <img src={Bell}
                 alt="Girl in a jacket"
                 width="30"
             
-                height="40"/>
-                
+                height="40"/> </div>
+              <div> 
                 <img
                 src={Admin}
                 alt="Girl in a jacket"
                 width="40"
                 className='image-icon'
-                height="40"/>
+                height="40"/> </div>
                 
-                
+             <div>   
           <NavDropdown title="Admin" id="navbarScrollingDropdown"  className='pt-2' >
           <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
           <NavDropdown.Item href="#action4">Another action</NavDropdown.Item>
@@ -169,8 +186,8 @@ return (
           <NavDropdown.Item href="#action5">
             Something else here
           </NavDropdown.Item>
-        </NavDropdown>
-                </span>   
+        </NavDropdown></div>
+                
                 </div>    
         
         </Nav>

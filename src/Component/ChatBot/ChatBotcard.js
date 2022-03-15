@@ -43,7 +43,7 @@ const ChatBotcard = () => {
               />   Chat agent</Card.Subtitle> 
               <br/> 
     <Row> 
-      <Col lg={4} md={4} sm={3} xs={3}>   <Card.Link href="#"><img
+      <Col lg={4} md={4} sm={2} xs={2}>   <Card.Link href="#"><img
                 src={Copy}
                 alt="Girl in a jacket"
                 width="60"
@@ -52,14 +52,14 @@ const ChatBotcard = () => {
               /></Card.Link></Col>
   
   
-  <Col lg={4} md={4} sm={3} xs={3}>      <Card.Link href="#"><img
+  <Col lg={4} md={4} sm={2} xs={2}>      <Card.Link href="#"><img
                 src={Edit}
                 alt="Girl in a jacket"
                 width="60"
                 height="60"
                 className="chatbot-img"
               /></Card.Link></Col>
-  <Col lg={4} md={4} sm={3} xs={3}> <Card.Link href="#"><img
+  <Col lg={4} md={4} sm={2} xs={2}> <Card.Link href="#"><img
                 src={Delete}
                 alt="Girl in a jacket"
                 width="60"

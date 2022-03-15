@@ -62,7 +62,8 @@
   margin-right: 5px !important;
 }
 .chatbot-img-mobile {
-  margin-left: 50px;
+  width: 100% !important;
+  height: 700px;
 }
 .mobile-portion {
   display: flex;
@@ -89,7 +90,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 100px;
+  /* margin-left: 100px; */
 }
 .Chatbotbutton {
   background: red;
