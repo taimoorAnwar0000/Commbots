@@ -1,27 +1,120 @@
-.messege-icon{
-    display: flex;
-    margin-left: 20px;
-    margin-right: 20px;
+.messege-icon {
+  display: flex;
+  margin-left: 20px;
+  margin-right: 20px;
 }
-
-.image-icon{
-    padding-top: 10px;
+.offcanvas-start {
+  width: 600px !important;
 }
-.navbar-row-1{
-    display: flex;
+.navbar-brand {
+  height: 1px;
 }
-.item-end{
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+.nav-link {
+  margin-right: 20px;
 }
-.selector{
-    border: 0px;
-    
+.hGetbP {
+  background: white;
+  color: black;
 }
-
-@media  (max-width: 1000px) {
-    .Sidebar {
-      display: none;
-    }
+.form-select {
+}
+.fa {
+  position: absolute;
+  left: 5px;
+}
+.item-end {
+  margin-left: 300px;
+}
+.image-icon {
+  padding-top: 0px;
+}
+.navbar-row-1 {
+  display: flex;
+}
+.form-select {
+  background-color: #212529 !important;
+  color: white !important;
+  border: none !important;
+  width: 200px !important;
+}
+.Admin-right {
+  position: absolute;
+  margin-top: 20px;
+  right: 0px;
+}
+.navbar-collapse {
+  padding-top: 30px;
+}
+.item-end {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+/* .selector {
+  border: 0px;
+  background-color: black;
+} */
+.picHeader {
+  margin-left: 10px;
+}
+@media (max-width: 1550px) {
+  .Admin-right {
+    position: relative;
+    right: 0px;
   }
+}
+
+@media (max-width: 1200px) {
+  .nav-link {
+    margin-right: 0px !important;
+  }
+}
+
+@media (max-width: 990px) {
+  .Sidebar {
+    display: none;
+  }
+}
+@media (min-width: 600px) {
+  .secondnavbar {
+    display: none;
+  }
+}
+
+@media (max-width: 1500px) {
+  .item-end {
+    margin-left: 0px;
+  }
+}
+/* @media (min-width: 1200px) and (max-width: 1300px) {
+  .item-end {
+    margin-left: 100px;
+  }
+}
+@media (max-width: 1200px) {
+  .item-end {
+    margin-left: 0px;
+  }
+} */
+
+@media (max-width: 600px) {
+  .Navbar1 {
+    display: none;
+  }
+  .secondnavbar {
+    display: block;
+  }
+  .sidebaricon {
+    display: none;
+  }
+}
+@media (max-width: 991px) {
+  .sidebaricon {
+    display: none;
+  }
+}
+@media (min-width: 991px) {
+  .mainSidebar {
+    display: none;
+  }
+}

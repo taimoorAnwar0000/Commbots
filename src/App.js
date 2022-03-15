@@ -1,4 +1,6 @@
-import logo from './logo.svg';
+
+import React,{useState} from 'react';
+
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {
@@ -23,18 +25,27 @@ import Graph from './Component/Graph/Graph'
 
 
 
+
 function App() {
+
+const [state,setState]=useState(false)
+
+console.log('stt',state);
+
+
   return (
 <>
 
 
 
     <Router>
-      {/* <NavbarChatbot/> */}
+      <NavbarChatbot   setState={setState} /> 
+     
+
     <Routes>
       <Route path="/login" element={<Login />} />
-      <Route path="/chatbot" element={<ChatBot />} />
-      <Route path="/navbar" element={<NavbarChatbot />} />
+      <Route path="/chatbot" element={<ChatBot  state={state}/>} />
+      {/* <Route path="/navbar" element={<NavbarChatbot />} /> */}
       <Route path="/sidebar" element={<Sidebar />} />
       <Route path="/card" element={<ChatBotcard />} />
       <Route path="/chatCenter" element={<ChatCenter250   />} />
