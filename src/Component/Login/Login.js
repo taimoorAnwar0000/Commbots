@@ -7,7 +7,7 @@ import User from '../images/user.png'
 import Password from '../images/password.png'
 import Eye from '../images/eye.png'
 
-const Login = () => {
+const Login = () => { 
   return (
     <Container fluid>
       <div className="login">

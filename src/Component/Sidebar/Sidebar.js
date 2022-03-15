@@ -58,7 +58,14 @@ const Sidebar = (props) => {
   <option value="2">Two</option>
   <option value="3">Three</option>
 </Form.Select> </span></div> </CDBSidebarMenuItem>
-<CDBSidebarMenuItem > <div className='d-flex'> <span className='mr-2'> <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" style={{background:'red'}}  />  </span>  <span> <Form.Select aria-label="Default select example" className='selector' >  
+<CDBSidebarMenuItem > <div className='d-flex'> <span className='mr-2'>   <img
+                src={Agent}
+                alt="Girl in a jacket"
+                width="20"
+                height="20"
+                className='label'
+
+              /> </span>  <span> <Form.Select aria-label="Default select example" className='selector' >  
   <option className='selector'> Labels</option>
   <option value="1">One</option>
   <option value="2">Two</option>

@@ -19,12 +19,13 @@ import ChatBotcard from './ChatBotcard'
 
 
 const ChatBot = (props) => {
-
+  
+ 
 console.log(props.flag)
 
   return (
-    <div className={props.state==false?'chatbotmainclass':'chatbotmain2'}>
-      <Container fluid>
+    <div className={props.state==false?' chatbotmainclass':'chatbotmain2'}  >
+      <Container fluid className='mt-3'>
         <Row>
           <span className="chat-bot-Row1">
             
@@ -83,8 +84,7 @@ console.log(props.flag)
             <img
               src={Mobile}
               alt="Girl in a jacket"
-              width="365"
-              height="737"
+              
               className="chatbot-img-mobile py-5  " />
   </div>
          

@@ -274,42 +274,15 @@ const NavbarChatbot = (props) => {
               <Nav className="me-auto my-2 my-lg-0  item-start "
                 navbarScroll
               >
-                <Nav.Link href="#action1 " className='mr-5' >  Home</Nav.Link>
+               <Nav.Link href="/ "    className='' >   Home</Nav.Link> 
                 <Nav.Link href="#action1 " className='mr-5' >  ChatCenter</Nav.Link>
 
-                <NavDropdown title="Messege" id="navbarScrollingDropdown">
-                  <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-                  <NavDropdown.Item href="#action4">Another action</NavDropdown.Item>
-                  <NavDropdown.Divider />
-                  <NavDropdown.Item href="#action5">
-                    Something else here
-                  </NavDropdown.Item>
-                </NavDropdown>
+                <Nav.Link href="/mainchat " className='d-flex' >  Messege <RiArrowDropDownLine/></Nav.Link> 
 
-                <NavDropdown title="Chatbot" id="navbarScrollingDropdown">
-                  <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-                  <NavDropdown.Item href="#action4">Another action</NavDropdown.Item>
-                  <NavDropdown.Divider />
-                  <NavDropdown.Item href="#action5">
-                    Something else here
-                  </NavDropdown.Item>
-                </NavDropdown>
-                <NavDropdown title="Setting" id="navbarScrollingDropdown">
-                  <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-                  <NavDropdown.Item href="#action4">Another action</NavDropdown.Item>
-                  <NavDropdown.Divider />
-                  <NavDropdown.Item href="#action5">
-                    Something else here
-                  </NavDropdown.Item>
-                </NavDropdown>
-                <NavDropdown title="Reports" id="navbarScrollingDropdown">
-                  <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-                  <NavDropdown.Item href="#action4">Another action</NavDropdown.Item>
-                  <NavDropdown.Divider />
-                  <NavDropdown.Item href="#action5">
-                    Something else here
-                  </NavDropdown.Item>
-                </NavDropdown>
+                <Nav.Link href="/chatbot " className='d-flex' >  Chatbot <RiArrowDropDownLine/></Nav.Link>
+                
+                <Nav.Link href=" " className='d-flex' >  Setting <RiArrowDropDownLine/></Nav.Link>
+                <Nav.Link href=" " className='d-flex' >  Reports <RiArrowDropDownLine/></Nav.Link>
 
                 <div className='Admin-right'>
                   <span className='messege-icon ml-5' >
