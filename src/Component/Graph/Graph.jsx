@@ -138,7 +138,10 @@ const Graph = (props) => {
             <div className="bar_all">
               <Dropdown className="d-inline mx-2" autoClose="inside">
                 <Dropdown.Toggle id="dropdown-autoclose-inside">
-                  <img src={all} /> All
+                  <img  src={all} /> <div className="bar_all_text">
+
+                  All
+                  </div>
                 </Dropdown.Toggle>
                 <Dropdown.Menu>
                   <Dropdown.Item href="#">A</Dropdown.Item>
@@ -151,7 +154,15 @@ const Graph = (props) => {
             <div className="bar_user">
               <Dropdown className="d-inline mx-2" autoClose="outside">
                 <Dropdown.Toggle id="dropdown-autoclose-outside">
-                  <img src={user} /> Veiw All
+                  <img src={user} />
+                  
+                  <div className="bar_all_text">
+
+                   Veiw All
+                  
+                  </div>
+                  
+                  
                 </Dropdown.Toggle>
                 <Dropdown.Menu>
                   <Dropdown.Item href="#">A</Dropdown.Item>
@@ -196,7 +207,7 @@ const Graph = (props) => {
                     {" "}
                     <Dropdown className="d-inline mx-2" autoClose="outside">
                       <Dropdown.Toggle id="dropdown-autoclose-outside">
-                        <img src={user} /> Veiw All
+                        <img className="veiw_img" src= {user} /> Veiw All
                       </Dropdown.Toggle>
                       <Dropdown.Menu>
                         <Dropdown.Item href="#">A</Dropdown.Item>

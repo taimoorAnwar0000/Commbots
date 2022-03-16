@@ -606,7 +606,7 @@ color: #000000;
 .top_bar{
     
     width: -webkit-fill-available;
-height: 100px;
+
 
 
 background: #333333;
@@ -702,14 +702,33 @@ font-size: 10px !important;
     border-radius: 10px !important;
 }
 
-
+.css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
+    font: inherit;
+    letter-spacing: inherit;
+    color: currentColor;
+    padding: 4px 0 5px;
+    border: 0;
+    box-sizing: content-box;
+    background: none;
+    height: 1.4375em;
+    margin: 0;
+    -webkit-tap-highlight-color: transparent;
+    display: block;
+    min-width: 0;
+    width: 100%;
+    -webkit-animation-name: mui-auto-fill-cancel;
+    animation-name: mui-auto-fill-cancel;
+    -webkit-animation-duration: 10ms;
+    animation-duration: 10ms;
+    padding: 12.5px 0px  !important;
+}
 
 
 }
 
 .btn-primary {
     
-gap: 10px;
+
 
 padding-left: 20px;
 
@@ -728,7 +747,7 @@ align-items: center;
 
 color: rgba(255, 255, 255, 0.5) !important;
 
-@media (max-width:800px){
+@media (max-width:1024px){
     
     border: none !important;
     height: auto !important;
@@ -788,6 +807,31 @@ gap: 22px;
         display: block !important;
     }
 }
+
+// @media only screen and (max-width: 1440px) and (min-width: 1024px){
+
+//     .veiw_img{
+//         width: 16px !important;
+//         height: 16px !important;
+//     }
+//     .bar_all_text{
+//         font-size: 15px !important;
+//     }
+
+//     .bar_all img{
+//         width: 16px !important;
+//         height: 16px !important;
+//     }
+
+//     *{
+//           font-size: 20px !important;
+//     }
+
+// .icon_number{
+//     font-size: 40px !important;
+// }
+
+// }
 
 
 @media (max-width:400px){

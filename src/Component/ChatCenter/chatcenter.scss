@@ -4,6 +4,7 @@
 .profile-text {
   padding-left: 10px;
 }
+
 .ChartCard {
   display: flex;
   /* justify-content: center; */
@@ -36,11 +37,11 @@
     font-size: 10px !important;
   }
 
-  @media (max-width:400px){
-      padding: 0px !important;
-      width: 72px !important;
-      text-align: center !important;
-      display: block !important;
+  @media (max-width: 400px) {
+    padding: 0px !important;
+    width: 72px !important;
+    text-align: center !important;
+    display: block !important;
   }
 }
 .date {
@@ -48,8 +49,8 @@
   right: 0;
   padding-right: 10px;
 
-  @media (max-width:370px){
-      padding-right: 0px !important;
+  @media (max-width: 370px) {
+    padding-right: 0px !important;
   }
 
   img {
@@ -89,8 +90,8 @@
   margin-bottom: 5px;
 }
 .icon {
-display: flex;
-gap: 10px;
+  display: flex;
+  gap: 10px;
 }
 .bell {
   display: flex;
@@ -125,7 +126,6 @@ gap: 10px;
 .chat-card-main {
   margin-top: 10px;
   padding-top: 10px;
-  padding-bottom: 10px;
 
   padding-left: 10px;
 }
@@ -133,7 +133,17 @@ gap: 10px;
   padding-top: 1.5px;
 }
 
+// .row>* {
+//   flex-shrink: 0;
+//   width: 100%;
+//   max-width: 100%;
+//    padding-right: calc(var(--bs-gutter-x) * .0 ) !important;
+//   padding-left: calc(var(--bs-gutter-x) * .2) !important;
+//   margin-top: var(--bs-gutter-y);
+// }
+
 .ChartCard {
+  padding: 15px;
   background-color: white;
   position: relative;
 }
@@ -409,7 +419,6 @@ gap: 10px;
   }
 }
 
-
 @media (max-width: 990px) {
   .chat_card_img {
     width: 100px !important;
@@ -417,47 +426,41 @@ gap: 10px;
   }
 }
 
+.button_closeder {
+  width: 130px !important;
+  height: 35px !important;
 
-.button_close{
-    width: 130px;
-height: 35px;
+  border: 1px solid #32be8a;
+  box-sizing: border-box;
+  border-radius: 5px !important;
 
+  font-family: "Hind";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
 
-border: 1px solid #32BE8A;
-box-sizing: border-box;
-border-radius: 5px;
+  text-align: center;
 
-
-font-family: 'Hind';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 32px;
-
-
-text-align: center;
-
-color: #4c5854;
+  color: #4c5854;
 }
 
-@media(max-width:530px){
-  .r_img{
+@media (max-width: 530px) {
+  .r_img {
     height: 50px;
-    width: 50px ;
+    width: 50px;
   }
 
-.profile-text h6{
-  font-size: 10px !important;
-}
+  .profile-text h6 {
+    font-size: 10px !important;
+  }
 
-.date2{
-  right: 0px !important;
-}
+  .date2 {
+    right: 0px !important;
+  }
 
-.button_close{
-  width: 60px;
-  font-size: 10px;
-}
-
-
+  .button_closeder {
+    width: 60px;
+    font-size: 10px;
+  }
 }

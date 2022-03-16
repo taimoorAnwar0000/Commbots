@@ -16,6 +16,7 @@ import Mobile from '../images/mobile.png'
 import Reset from '../images/reset.png'
 
 import ChatBotcard from './ChatBotcard'
+import { Link } from 'react-router-dom'
 
 
 const ChatBot = (props) => {
@@ -24,9 +25,13 @@ const ChatBot = (props) => {
 console.log(props.flag)
 
   return (
+
+   
     <div className={props.state==false?' chatbotmainclass':'chatbotmain2'}  >
+       {/* <Link>dddd</Link> */}
       <Container fluid className='mt-3'>
         <Row>
+
           <span className="chat-bot-Row1">
             
             <h6> Home </h6> <MdArrowForwardIos className="mt-2" />
@@ -89,7 +94,7 @@ console.log(props.flag)
   </div>
          
 <div    className='phone-button'  >
-<div > <button className='button_close' style={{background: '#0061BB' ,width:'100px' ,height:'40px' ,color:'black'}}>
+<div > <button className='' style={{background: '#0061BB' ,width:'100px' ,height:'40px' ,color:'black'}}>
 
 <img
 src={Edit}
@@ -103,7 +108,7 @@ src={Edit}
  <div >
 
 
- <button className='button_close'  style={{background: 'white' ,width:'100px',height:'40px',color:'black',border:'none'
+ <button className='button_chatbot'  style={{background: 'white' ,width:'100px',height:'40px',color:'black',border:'none'
 }}    >
 
 <img

@@ -16,34 +16,42 @@
 .navbar-brand {
   height: 1px;
 }
-.drop-icon {
-  margin-top: 15px;
-  margin-left: 10px;
-  width: 18px;
+.image-icon-1 {
+  color: white;
 }
-.navbar-text {
+.navbar-all-icon {
+  color: white !important
+;
+}
+.icon_text {
+  font-weight: 400;
   font-size: 22px;
-  font-weight: 400px;
+  font-family: Hind;
+  color: white;
+}
+.icon_text2 {
+  font-weight: 400;
+  font-size: 22px;
   font-family: Hind;
 }
-
 .navbar-collapse {
   flex-grow: 0 !important;
 }
 .color1 {
   background-color: #32be8a;
-  justify-content: center;
-  align-items: center;
-  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+  display: flex !important;
   border-radius: 10px;
-  margin: 0px !important;
-  padding-left: 20px;
-  margin-right: 10px;
+  margin: 10px !important;
+  padding-left: 20px !important;
+  color: white !important;
 }
 .colorChange {
   display: flex;
   justify-content: center;
   align-items: center;
+  /* color: red !important; */
 }
 @media (max-width: 991px) {
   .navbar-brand img {
@@ -59,24 +67,32 @@
 }
 .form-select {
 }
+.navbar-link {
+  text-decoration: none;
+  margin-right: 20px;
+}
 .fa {
   position: absolute;
   left: 5px;
 }
 .label {
-  /* background: white; */
   color: aliceblue;
 }
 .item-end {
-  margin-right: 300px !important;
+  margin-right: 221px !important;
+  margin-left: 50px;
 }
 .image-icon {
   padding-top: 0px;
-  width: 24px;
-  height: 24px;
+  width: 24px !important;
+  height: 24px !important;
 }
 .navbar-row-1 {
   display: flex;
+}
+
+.text_arrow_up {
+  margin-top: 8px;
 }
 
 .form-select {
@@ -91,36 +107,27 @@
     margin-top: -20px;
   }
 }
-@media (max-width: 1280px) {
+@media (max-width: 1440px) {
   .d-flex img {
-    padding-top: 5px !important;
-    width: 24px;
+    /* padding-top: 5px !important; */
+    width: 14px;
   }
 
   .image-icon {
-    width: 24px;
+    width: 18px !important ;
+    height: 18px !important;
   }
 
   .Admin-right img {
-    width: 20px !important;
-    height: 21px !important;
+    width: 22px !important;
+    height: 22px !important;
+  }
+  .icon_text {
+    font-size: 15px !important;
   }
 }
 
 @media (max-width: 1100px) {
-  .d-flex img {
-    padding-top: 14px !important;
-    width: 14px !important ;
-  }
-
-  .image-icon {
-    width: 14px !important ;
-  }
-
-  .bell_fix {
-    width: 14px !important;
-  }
-
   .picHeader {
     width: 150px !important;
     height: 40px !important;
@@ -148,11 +155,10 @@
   margin-left: 10px;
   margin-top: -12px;
 }
-@media (max-width: 1380px) {
+@media (max-width: 1550px) {
   .Admin-right {
     position: relative;
-    right: 20px;
-    width: 100%;
+    right: -10px;
   }
 }
 
