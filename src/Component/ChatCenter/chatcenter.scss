@@ -4,6 +4,8 @@
 .profile-text {
   padding-left: 10px;
 }
+
+
 .ChartCard {
   display: flex;
   /* justify-content: center; */
@@ -125,7 +127,7 @@ gap: 10px;
 .chat-card-main {
   margin-top: 10px;
   padding-top: 10px;
-  padding-bottom: 10px;
+
 
   padding-left: 10px;
 }
@@ -133,7 +135,18 @@ gap: 10px;
   padding-top: 1.5px;
 }
 
+// .row>* {
+//   flex-shrink: 0;
+//   width: 100%;
+//   max-width: 100%;
+//    padding-right: calc(var(--bs-gutter-x) * .0 ) !important;
+//   padding-left: calc(var(--bs-gutter-x) * .2) !important;
+//   margin-top: var(--bs-gutter-y);
+// }
+
+
 .ChartCard {
+  padding: 15px;
   background-color: white;
   position: relative;
 }
@@ -418,14 +431,14 @@ gap: 10px;
 }
 
 
-.button_close{
+.button_closeder{
     width: 130px;
 height: 35px;
 
 
 border: 1px solid #32BE8A;
 box-sizing: border-box;
-border-radius: 5px;
+border-radius: 5px !important;
 
 
 font-family: 'Hind';
@@ -454,7 +467,7 @@ color: #4c5854;
   right: 0px !important;
 }
 
-.button_close{
+.button_closeder{
   width: 60px;
   font-size: 10px;
 }

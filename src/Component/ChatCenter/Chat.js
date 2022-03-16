@@ -53,7 +53,7 @@ const Chat = () => {
             <div>
 
 
-              <button className='button_close'  > Closed  </button>
+              <button className='button_closeder'  > Closed  </button>
             </div>  </div>
 
           <div className='icon'> <BsArrow90DegRight style={{color:'#F8D418'}}/><MdPersonOutline /> <AiOutlineFile/><MdOutlineBookmarkBorder /><ImAttachment /><BsShare /> </div>  </div>

@@ -103,7 +103,7 @@ src={Edit}
  <div >
 
 
- <button className='button_close'  style={{background: 'white' ,width:'100px',height:'40px',color:'black',border:'none'
+ <button className='button_closeder'  style={{background: 'white' ,width:'100px',height:'40px',color:'black',border:'none'
 }}    >
 
 <img
