@@ -48,10 +48,10 @@ console.log(props.flag)
             <span className="chatbot-icon-text"> Chatbots</span></div>
         
           <div >
-            <Button className="add-button"   style={{  background: '#32be8a4d' }} >
+            <button className="add-button"   style={{  background: '#32be8a4d' }} >
               <img src={Add} alt="Girl in a jacket" width="18" height="18" />
               Add New
-            </Button>
+            </button>
           </div></div>
         </Row>
         <Row>
@@ -78,7 +78,7 @@ console.log(props.flag)
           </Col>
           <Col lg={4} md={12} sm={12} xs={12}  >
             <div className='mobile-portion'>
-            
+            <div  className='message-preview' >Message Preview</div>
             <div  className='mobile-pic'>
 
             <img

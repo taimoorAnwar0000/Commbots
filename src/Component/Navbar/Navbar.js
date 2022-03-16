@@ -5,7 +5,7 @@ import LoginImageForm from '../images/commbot-login.png'
 import Home from '../images/home1.png'
 import Chat from '../images/mainchat.png'
 import './Navbar.css'
-import Bell from '../images/bell.png'
+import Bell from '../images/Bell.png'
 import Admin from '../images/admin.png'
 import Messege from '../images/msg.png'
 import Setting from '../images/setting.png'
@@ -111,7 +111,7 @@ const NavbarChatbot = (props) => {
 
                 <img src={LoginImageForm}
                   alt="Girl in a jacket"
-                  width="200"
+                  width="221"
                   className='mr-5 picHeader'
                   height="49" />
                 <Sidebar flag={flag} />
@@ -128,9 +128,9 @@ const NavbarChatbot = (props) => {
                   <div className={changecolor == 1 ? 'color1' : 'colorChange'} onClick={handleClick1} >  <img
                     src={Home}
                     alt="Girl in a jacket"
-                    width="25"
+                    width="24"
                     className='image-icon  '
-                    height="30" />   <Nav.Link href="/ "    className='' >   Home</Nav.Link>  </div>
+                    height="24" />   <Nav.Link href="/ "    className='' >  <span className='navbar-text'> Home</span>    </Nav.Link>  </div>
 
 
                   <div className={changecolor == 2 ? 'color1' : 'colorChange'} onClick={handleClick2} >  <img
@@ -138,7 +138,7 @@ const NavbarChatbot = (props) => {
                     alt="Girl in a jacket"
                     width="25"
                     className='image-icon  mr-5'
-                    height="30" />   <Nav.Link href="/mainchat " className='' >  ChatCenter</Nav.Link>  </div>
+                    height="30" />   <Nav.Link href="/mainchat " className='' >  <span className='navbar-text mr-1'> ChatCenter </span> </Nav.Link>  </div>
 
 
                   <div className={changecolor == 3 ? 'color1' : 'colorChange'} onClick={handleClick3}>
@@ -152,7 +152,7 @@ const NavbarChatbot = (props) => {
                       className='image-icon '
                       height="30" />
                       
-                      <Nav.Link href="/mainchat " className='d-flex' >  Messege <RiArrowDropDownLine/></Nav.Link>   
+                      <Nav.Link href="/mainchat " className='d-flex' >  <span className='navbar-text mr-1'> Message </span> <RiArrowDropDownLine className='drop-icon'  /></Nav.Link>   
                       </div>
 
 
@@ -172,7 +172,7 @@ const NavbarChatbot = (props) => {
                       </NavDropdown.Item>
                     </NavDropdown> */}
 
-                    <Nav.Link href="/chatbot " className='d-flex' >  Chatbot <RiArrowDropDownLine/></Nav.Link>
+                    <Nav.Link href="/chatbot " className='d-flex' > <span className='navbar-text mr-1'> Chatbot </span> <RiArrowDropDownLine className='drop-icon'  /></Nav.Link>
 
                     </div>
 
@@ -193,7 +193,7 @@ const NavbarChatbot = (props) => {
                       </NavDropdown.Item>
                     </NavDropdown> */}
                     
-                    <Nav.Link href=" " className='d-flex' >  Setting <RiArrowDropDownLine/></Nav.Link>
+                    <Nav.Link href=" " className='d-flex' >  <span className='navbar-text mr-1'> Setting </span> <RiArrowDropDownLine className='drop-icon'  /></Nav.Link>
                     </div>
 
                   <div className={changecolor == 6 ? 'color1' : 'colorChange'} onClick={handleClick6}>
@@ -211,7 +211,7 @@ const NavbarChatbot = (props) => {
                         Something else here
                       </NavDropdown.Item>
                     </NavDropdown> */}
-                    <Nav.Link href=" " className='d-flex' >  Reports <RiArrowDropDownLine/></Nav.Link>
+                    <Nav.Link href=" " className='d-flex' >  <span className='navbar-text mr-1'> Reports </span> <RiArrowDropDownLine className='drop-icon'  /></Nav.Link>
                     </div>
 
 
@@ -219,16 +219,16 @@ const NavbarChatbot = (props) => {
                     <span className='messege-icon ml-5' >
                       <img src={Bell}
                         alt="Girl in a jacket"
-                        width="30"
+                        width="24"
 
-                        height="40" />
+                        height="24" />
 
                       <img
                         src={Admin}
                         alt="Girl in a jacket"
-                        width="40"
+                        width="24"
                         className='image-icon'
-                        height="40" />
+                        height="24" />
 
 
                       {/* <NavDropdown title="Admin" id="navbarScrollingDropdown" className='pt-2' >
@@ -240,7 +240,7 @@ const NavbarChatbot = (props) => {
                         </NavDropdown.Item>
                       </NavDropdown> */}
 
-                      <Nav.Link href=" " className='d-flex' >  Admin <RiArrowDropDownLine/></Nav.Link>
+                      <Nav.Link href=" " className='d-flex' >  <span className='navbar-text mr-1'> Admin </span> <RiArrowDropDownLine className='drop-icon'  /></Nav.Link>
 
                     </span>
                   </div>

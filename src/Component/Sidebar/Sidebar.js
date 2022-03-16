@@ -15,6 +15,7 @@ import All from '../images/all.png'
 import User from '../images/user.png'
 import { CgMenu } from 'react-icons/cg';
 import { FaRegUser } from 'react-icons/fa';
+import Fade from 'react-reveal/Fade';
 
 
 
@@ -25,6 +26,9 @@ const Sidebar = (props) => {
   console.log(props.flag)
  
   return (
+<Fade left>
+        
+        
     <div style={{ display:props.flag===true?'none':'flex', height: '100vh', overflow: 'scroll initial' }}  className='mainSidebar'  >
       <CDBSidebar toggled={false} textColor="#fff" backgroundColor="#333" style={{ width:props.flag===true?'0px':'270px', minWidth:props.flag===true?'0px':'270px' }} >
       
@@ -105,7 +109,8 @@ const Sidebar = (props) => {
         </CDBSidebarContent>
 
       </CDBSidebar>
-    </div>
+    </div></Fade>
+
   );
 };
 
