@@ -6,7 +6,38 @@ gap: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    
+
 }
+
+@media (max-width:601px){
+  .messege-icon{
+    justify-content: start !important;
+  }
+
+  .Admin-right img{
+    display: none !important;
+  }
+
+}
+@media (max-width:990px){
+ 
+
+  .Admin-right img{
+    display: none !important;
+  }
+.item-end{
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  margin-right: unset !important;
+ 
+  
+  
+}
+}
+
 .offcanvas-start {
   width: 600px !important;
 }
@@ -109,6 +140,12 @@ margin-top: 8px;
   width: 14px ;
 }
 
+.text_arrow_up{
+  margin-top: 2px !important;
+  
+  
+  
+  }
   .image-icon{
   width: 18px !important ;
   height: 18px !important;
