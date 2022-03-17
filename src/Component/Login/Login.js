@@ -40,7 +40,7 @@ const Login = () => {
               <hr style={{ width: '60px', color: '#32BE8A' }} />
 
               <div className="user">
-                <img src={User} alt="Girl in a jacket" width="38" height="40" />{' '}
+                <img src={User} alt="Girl in a jacket" width="38" height="40" />
                 <span className='username-text'>Enter UserName</span>
               </div>
 

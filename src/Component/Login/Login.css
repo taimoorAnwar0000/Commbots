@@ -213,7 +213,7 @@
   }
 }
 
-@media (min-width: 360px) and (max-width: 600px) {
+@media (min-width: 460px) and (max-width: 600px) {
   .login-form {
     width: 354px;
     height: 545px;
@@ -230,7 +230,9 @@
   }
   .login-text h2 {
     font-size: 50px;
-    font-weight: 300;
+    /* font-weight: 300; */
+    font-weight: 500;
+    margin-right: 50px;
   }
   .user {
     width: 280px;
