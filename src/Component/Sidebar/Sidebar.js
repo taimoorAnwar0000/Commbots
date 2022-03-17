@@ -15,7 +15,7 @@ import All from '../images/all.png'
 import User from '../images/user.png'
 import { CgMenu } from 'react-icons/cg';
 import { FaRegUser } from 'react-icons/fa';
-import Fade from 'react-reveal/Fade'
+import Fade from 'react-reveal/Fade';
 
 
 

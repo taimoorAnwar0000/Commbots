@@ -112,7 +112,7 @@ const NavbarChatbot = (props) => {
 
                 <img src={LoginImageForm}
                   alt="Girl in a jacket"
-                  width="200"
+                  width="221"
                   className='mr-5 picHeader'
                   height="49" />
                 <Sidebar flag={flag} />
@@ -127,38 +127,39 @@ const NavbarChatbot = (props) => {
 
 
 
-
+<div className='reportmaindiv'>
                   <div className={changecolor == 1 ? 'color1' : 'colorChange'} onClick={handleClick1} >  <img
                     src={Home}
                     alt="Girl in a jacket"
-                    width="25"
+                    width="24"
                     className='image-icon  '
-                    height="30" />   <Link to="/ "    className='' >   <span className='icon_texts'>Home</span></Link>  </div>
+                    height="30" />   <Link to="/ "    className='navbar-link' >   <span   id='texted_icon'className={changecolor == 1 ? 'icon_texts' : 'icon_text2'}>Home</span></Link>  </div></div>
 
-
+<div className='reportmaindiv'>
                   <div className={changecolor == 2 ? 'color1' : 'colorChange'} onClick={handleClick2} >  <img
                     src={Chat}
                     alt="Girl in a jacket"
                     width="25"
                     className='image-icon  mr-5'
-                    height="30" />   <Link to="/mainchat " className='' >  <span className='icon_texts'>ChatCenter</span></Link>  </div>
+                    height="30" />   <Link to="/mainchat " className='navbar-link' >  <span   id='texted_icon'className={changecolor == 2 ? 'icon_texts' : 'icon_text2'}>ChatCenter</span></Link>  </div></div>
 
-
+<div className='reportmaindiv'>
                   <div className={changecolor == 3 ? 'color1' : 'colorChange'} onClick={handleClick3}>
 
-
+                  
 
                     <img
                       src={Messege}
                       alt="Girl in a jacket"
                       width="25"
-                      className='image-icon '
+                      id='message_iconed'
+                      className={changecolor == 2 ? 'image-icon-1' : 'image-icon'}
                       height="30" />
                       
-                      <Link to="/mainchat " className='d-flex' >  <span className='icon_texts'>Messege</span> <RiArrowDropDownLine className='text_arrow_up'/></Link>   
-                      </div>
+                      <Link to="/mainchat " className='d-flex navbar-link ' >  <span   id='texted_icon'className={changecolor == 3 ? 'icon_texts' : 'icon_text2'}>Messege</span> <RiArrowDropDownLine className='text_arrow_up'/> </Link>   
+                      </div></div>
 
-
+<div className='reportmaindiv'>
                   <div className={changecolor == 4 ? 'color1' : 'colorChange'} onClick={handleClick4}>
                     <img
                       src={Chatbot}
@@ -175,10 +176,10 @@ const NavbarChatbot = (props) => {
                       </NavDropdown.Item>
                     </NavDropdown> */}
 
-                    <Link to="/chatbot " className='d-flex' >  <span className='icon_texts'>Chatbot</span> <RiArrowDropDownLine className='text_arrow_up'/></Link>
+                    <Link to="/chatbot " className='d-flex navbar-link' >  <span   id='texted_icon'className={changecolor == 4 ? 'icon_texts' : 'icon_text2'}>Chatbot</span> <RiArrowDropDownLine className='text_arrow_up'/></Link>
 
-                    </div>
-
+                    </div></div>
+<div className='reportmaindiv'>
                   <div className={changecolor == 5 ? 'color1' : 'colorChange'} onClick={handleClick5}>
 
                     <img
@@ -196,9 +197,9 @@ const NavbarChatbot = (props) => {
                       </NavDropdown.Item>
                     </NavDropdown> */}
                     
-                    <Link to=" " className='d-flex' >  <span className='icon_texts'>Setting</span> <RiArrowDropDownLine className='text_arrow_up'/></Link>
-                    </div>
-
+                    <Link to=" " className='d-flex navbar-link' >  <span   id='texted_icon'className={changecolor == 5 ? 'icon_texts' : 'icon_text2'}>Setting</span> <RiArrowDropDownLine className='text_arrow_up'/></Link>
+                    </div></div>
+<div className='reportmaindiv'>
                   <div className={changecolor == 6 ? 'color1' : 'colorChange'} onClick={handleClick6}>
                     <img
                       src={Report}
@@ -214,17 +215,17 @@ const NavbarChatbot = (props) => {
                         Something else here
                       </NavDropdown.Item>
                     </NavDropdown> */}
-                    <Link to=" " className='d-flex' >  <span className='icon_texts'>Reports</span> <RiArrowDropDownLine className='text_arrow_up'/></Link>
+                    <Link to=" " className='d-flex navbar-link' >  <span  id='texted_icon' className={changecolor == 6 ? 'icon_texts' : 'icon_text2'}>Reports</span> <RiArrowDropDownLine className='text_arrow_up'/></Link>
                     </div>
-
+                    </div>
 
                   <div className='Admin-right'>
                     <span className='messege-icon ml-5' >
                       <img src={Bell}
                         alt="Girl in a jacket"
-                        width="30"
+                        width="24"
 
-                        height="40" />
+                        height="24" />
 
                       <img
                         src={Admin}
@@ -243,7 +244,7 @@ const NavbarChatbot = (props) => {
                         </NavDropdown.Item>
                       </NavDropdown> */}
 
-                      <Link to=" " className='d-flex' > <span className='icon_texts'>Admin</span>  <RiArrowDropDownLine className='text_arrow_up'/></Link>
+                      <Link to=" " className='d-flex navbar-link' > <span id='texted_icon' className={changecolor == 7 ? 'icon_texts' : 'icon_text2'}>Admin</span>  <RiArrowDropDownLine className='text_arrow_up'/></Link>
 
                     </span>
                   </div>
