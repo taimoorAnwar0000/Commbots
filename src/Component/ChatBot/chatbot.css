@@ -70,6 +70,18 @@
 .btn {
   border-radius: 30px !important;
 }
+.edit-button {
+  width: 171px !important;
+  height: 60px !important;
+  border-radius: 30px;
+  border: none;
+}
+.reset-button {
+  width: 171px !important;
+  height: 60px !important;
+  border-radius: 30px;
+  border: none;
+}
 
 .btn img {
   margin-right: 5px !important;

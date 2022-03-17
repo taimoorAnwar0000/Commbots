@@ -7,6 +7,32 @@
   justify-content: center;
   align-items: center;
 }
+
+.reportmaindiv {
+  margin-right: 20px !important;
+}
+
+@media (max-width: 601px) {
+  .messege-icon {
+    justify-content: start !important;
+  }
+
+  .Admin-right img {
+    display: none !important;
+  }
+}
+@media (max-width: 990px) {
+  .Admin-right img {
+    display: none !important;
+  }
+  .item-end {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin-right: unset !important;
+  }
+}
+
 .offcanvas-start {
   width: 600px !important;
 }
@@ -43,7 +69,7 @@
   align-items: center !important;
   display: flex !important;
   border-radius: 10px;
-  margin: 10px !important;
+  /* margin: 10px !important; */
   padding-left: 20px !important;
   color: white !important;
 }
@@ -111,6 +137,14 @@
   .d-flex img {
     /* padding-top: 5px !important; */
     width: 14px;
+  }
+
+  .text_arrow_up {
+    margin-top: 2px !important;
+  }
+  .image-icon {
+    width: 18px !important ;
+    height: 18px !important;
   }
 
   .image-icon {
