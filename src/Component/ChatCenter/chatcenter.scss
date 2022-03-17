@@ -44,17 +44,24 @@
     display: block !important;
   }
 }
+
+
+.chat250image img{
+  width: 50px !important;
+}
+
+
 .date {
   position: absolute;
   right: 0;
   padding-right: 10px;
 
-  @media (max-width: 370px) {
-    padding-right: 0px !important;
+  @media (max-width: 1035px) {
+    font-size: 10px !important;
   }
 
   img {
-    @media (max-width: 1150px) {
+    @media (max-width: 1240px) {
       width: 40px !important;
       height: 20px !important;
     }
@@ -122,6 +129,7 @@
 .mainCHat {
   background: #e5e5e5;
   padding-top: 30px;
+  margin-top: 10px;
 }
 .chat-card-main {
   margin-top: 10px;
@@ -433,13 +441,13 @@
   overflow: hidden;
 }
 
-@media (max-width: 1150px) {
+@media (max-width: 1240px) {
   .chat_card_img {
     width: 74px !important;
     height: 74px !important;
   }
 }
-@media (max-width: 1150px) {
+@media (max-width: 1240px) {
   .profile-text h6 {
     font-size: 11px !important;
   }

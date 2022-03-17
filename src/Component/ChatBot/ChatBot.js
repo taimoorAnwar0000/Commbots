@@ -26,7 +26,8 @@ console.log(props.flag)
 
   return (
 
-   
+   <div className="main_chat_bot">
+
     <div className={props.state==false?' chatbotmainclass':'chatbotmain2'}  >
        {/* <Link>dddd</Link> */}
       <Container fluid className='mt-3'>
@@ -42,7 +43,7 @@ console.log(props.flag)
 
         <Row className="chat-bot-row2">
           <div className="chatbot-img-text">
-            <div>
+            <div className="aroundit">
             <img
               src={Chatbot}
               alt="Girl in a jacket"
@@ -53,14 +54,20 @@ console.log(props.flag)
             <span className="chatbot-icon-text"> Chatbots</span></div>
         
           <div >
-            <button className="add-button"   style={{  background: '#32be8a4d' }} >
+            <button className="add-button"   style={{  background: '#32be8a4d', color: 'white'}} >
               <img src={Add} alt="Girl in a jacket" width="18" height="18" />
               Add New
             </button>
           </div></div>
         </Row>
+        <div className="giving_it">
         <Row>
+
+
+
+
           <Col lg={8} md={12} sm={12} xs={12}>
+<div className="khan">
 
         <div className='d-flex mt-4  chatbottext '  ><h6>Main Bots</h6> <    h4  className='Linked'  >Linked Bots</h4></div>
           
@@ -80,7 +87,10 @@ console.log(props.flag)
               
                 </Row>
                
+</div>
           </Col>
+
+        
           <Col lg={4} md={12} sm={12} xs={12}  >
             <div className='mobile-portion'>
             <div  className='message-preview' >Message Preview</div>
@@ -138,7 +148,10 @@ src={Edit}
             
             </Col>
         </Row>
+        </div>
       </Container>
+      </div>
+   
     </div>
   )
 }

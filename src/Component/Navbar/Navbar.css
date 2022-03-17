@@ -1,6 +1,6 @@
 .messege-icon {
   display: flex;
-  gap: 15px;
+  gap: 3px;
   margin-right: 20px;
   margin-top: -22px;
   display: flex;
@@ -61,6 +61,8 @@
   font-weight: 400 !important;
   font-size: 22px !important;
   font-family: Hind !important;
+  padding-left: 4px;
+  
  
 }
 
@@ -70,6 +72,15 @@
   font-family: Hind;
   color: white;
 }
+
+
+
+.Navbar1 a{
+  color: #555555;
+}
+
+
+
 .icon_text2 {
   font-weight: 400;
   font-size: 22px;
@@ -78,6 +89,10 @@
 .navbar-collapse {
   flex-grow: 0 !important;
 }
+.image-icon1{
+  filter: brightness(25);
+
+}
 .color1 {
   background-color: #32be8a;
   justify-content: center !important;
@@ -85,9 +100,10 @@
   display: flex !important;
   border-radius: 10px;
   /* margin: 10px !important; */
-  padding: 6px !important;
+  /* padding: 6px !important; */
   color: white !important;
   margin-right: unset !important;
+  
 }
 .colorChange {
   display: flex;
@@ -145,7 +161,16 @@
 
 .text_arrow_up {
   margin-top: 8px;
+  color: #555555 !important;
 }
+
+
+
+
+
+
+
+
 
 .form-select {
   background-color: #212529 !important;

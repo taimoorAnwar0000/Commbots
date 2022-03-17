@@ -16,14 +16,30 @@
   font-weight: 500;
   color: #000000;
   padding-left: 10px;
+  border-radius: 10px;
 }
+
+.khan{
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0px 0px 14px rgba(0,0,0.5)
+}
+
+.giving_it{
+  display: flex !important;
+  flex-direction: row !important;
+}
+
+.main_chat_bot{
+  background-color: #E5E5E5;
+}
+
 .ajhv {
   display: flex;
   justify-content: space-between;
 }
-.chatbot-img-delete {
-  padding-right: 10px;
-}
+
 .Card-link {
   display: flex;
   justify-content: space-between;
@@ -43,8 +59,13 @@
   align-items: center;
   height: 100px;
   border-radius: 10px;
-  margin-right: 100px !important;
+  
 }
+
+.aroundit{
+  display:flex !important;
+}
+
 .add-button {
   background-color: #32be8a !important;
   border-radius: 30px !important;

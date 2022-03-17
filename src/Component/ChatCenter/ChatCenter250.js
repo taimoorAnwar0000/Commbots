@@ -21,8 +21,7 @@ const ChatCenter250 = () => {
               <div className='chat250image' >    <img
                 src={Chat250}
                 alt="Girl in a jacket"
-                width="64"
-                height="30"
+               
 
               /> </div>
 
