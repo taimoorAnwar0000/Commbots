@@ -15,6 +15,7 @@ import Chatbot from '../images/chatbot.png'
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { AiOutlineHome } from 'react-icons/ai';
 import { RiArrowDropDownLine } from 'react-icons/ri';
+import { BrowserRouter, Route, Link } from "react-router-dom";
 
 
 
@@ -132,7 +133,7 @@ const NavbarChatbot = (props) => {
                     alt="Girl in a jacket"
                     width="25"
                     className='image-icon  '
-                    height="30" />   <Nav.Link href="/ "    className='' >   <span className='icon_text'>Home</span></Nav.Link>  </div>
+                    height="30" />   <Link to="/ "    className='' >   <span className='icon_texts'>Home</span></Link>  </div>
 
 
                   <div className={changecolor == 2 ? 'color1' : 'colorChange'} onClick={handleClick2} >  <img
@@ -140,7 +141,7 @@ const NavbarChatbot = (props) => {
                     alt="Girl in a jacket"
                     width="25"
                     className='image-icon  mr-5'
-                    height="30" />   <Nav.Link href="/mainchat " className='' >  <span className='icon_text'>ChatCenter</span></Nav.Link>  </div>
+                    height="30" />   <Link to="/mainchat " className='' >  <span className='icon_texts'>ChatCenter</span></Link>  </div>
 
 
                   <div className={changecolor == 3 ? 'color1' : 'colorChange'} onClick={handleClick3}>
@@ -154,7 +155,7 @@ const NavbarChatbot = (props) => {
                       className='image-icon '
                       height="30" />
                       
-                      <Nav.Link href="/mainchat " className='d-flex' >  <span className='icon_text'>Messege</span> <RiArrowDropDownLine className='text_arrow_up'/></Nav.Link>   
+                      <Link to="/mainchat " className='d-flex' >  <span className='icon_texts'>Messege</span> <RiArrowDropDownLine className='text_arrow_up'/></Link>   
                       </div>
 
 
@@ -174,7 +175,7 @@ const NavbarChatbot = (props) => {
                       </NavDropdown.Item>
                     </NavDropdown> */}
 
-                    <Nav.Link href="/chatbot " className='d-flex' >  <span className='icon_text'>Chatbot</span> <RiArrowDropDownLine className='text_arrow_up'/></Nav.Link>
+                    <Link to="/chatbot " className='d-flex' >  <span className='icon_texts'>Chatbot</span> <RiArrowDropDownLine className='text_arrow_up'/></Link>
 
                     </div>
 
@@ -195,7 +196,7 @@ const NavbarChatbot = (props) => {
                       </NavDropdown.Item>
                     </NavDropdown> */}
                     
-                    <Nav.Link href=" " className='d-flex' >  <span className='icon_text'>Setting</span> <RiArrowDropDownLine className='text_arrow_up'/></Nav.Link>
+                    <Link to=" " className='d-flex' >  <span className='icon_texts'>Setting</span> <RiArrowDropDownLine className='text_arrow_up'/></Link>
                     </div>
 
                   <div className={changecolor == 6 ? 'color1' : 'colorChange'} onClick={handleClick6}>
@@ -213,7 +214,7 @@ const NavbarChatbot = (props) => {
                         Something else here
                       </NavDropdown.Item>
                     </NavDropdown> */}
-                    <Nav.Link href=" " className='d-flex' >  <span className='icon_text'>Reports</span> <RiArrowDropDownLine className='text_arrow_up'/></Nav.Link>
+                    <Link to=" " className='d-flex' >  <span className='icon_texts'>Reports</span> <RiArrowDropDownLine className='text_arrow_up'/></Link>
                     </div>
 
 
@@ -242,7 +243,7 @@ const NavbarChatbot = (props) => {
                         </NavDropdown.Item>
                       </NavDropdown> */}
 
-                      <Nav.Link href=" " className='d-flex' > <span className='icon_text'>Admin</span>  <RiArrowDropDownLine className='text_arrow_up'/></Nav.Link>
+                      <Link to=" " className='d-flex' > <span className='icon_texts'>Admin</span>  <RiArrowDropDownLine className='text_arrow_up'/></Link>
 
                     </span>
                   </div>
@@ -280,15 +281,15 @@ const NavbarChatbot = (props) => {
               <Nav className="me-auto my-2 my-lg-0  item-start "
                 navbarScroll
               >
-               <Nav.Link href="/ "    className='' >   Home</Nav.Link> 
-                <Nav.Link href="#action1 " className='mr-5' >  ChatCenter</Nav.Link>
+               <Link to="/ "    className='' >   Home</Link> 
+                <Link to="#action1 " className='mr-5' >  ChatCenter</Link>
 
-                <Nav.Link href="/mainchat " className='d-flex' >  Messege <RiArrowDropDownLine/></Nav.Link> 
+                <Link to="/mainchat " className='d-flex' >  Messege <RiArrowDropDownLine/></Link> 
 
-                <Nav.Link href="/chatbot " className='d-flex' >  Chatbot <RiArrowDropDownLine/></Nav.Link>
+                <Link to="/chatbot " className='d-flex' >  Chatbot <RiArrowDropDownLine/></Link>
                 
-                <Nav.Link href=" " className='d-flex' >  Setting <RiArrowDropDownLine/></Nav.Link>
-                <Nav.Link href=" " className='d-flex' >  Reports <RiArrowDropDownLine/></Nav.Link>
+                <Link to=" " className='d-flex' >  Setting <RiArrowDropDownLine/></Link>
+                <Link to=" " className='d-flex' >  Reports <RiArrowDropDownLine/></Link>
 
                 <div className='Admin-right'>
                   <span className='messege-icon ml-5' >

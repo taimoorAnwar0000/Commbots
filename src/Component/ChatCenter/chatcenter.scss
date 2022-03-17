@@ -362,7 +362,38 @@ gap: 10px;
     outline: none;
     background: #f5f7fb;
     border-radius: 40px;
+
+    
   }
+
+
+  @media (max-width:500px) {
+    .input_chat{
+
+      height: 60px !important;
+    }
+    .input_box{
+
+      height: 60px !important;
+    }
+
+::placeholder{
+  font-size: 15px !important;
+}
+
+.mic {
+  width: 50px !important;
+  
+}
+
+.msent img{
+  width: 30px !important;
+}
+
+  }
+
+
+
 
   ::placeholder {
     font-family: "Hind";
