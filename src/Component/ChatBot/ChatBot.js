@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container, Row, Col, Button ,Card} from 'react-bootstrap'
-import './chatbot.css'
+import './chatbot.scss'
 import { MdArrowForwardIos } from 'react-icons/md'
 import { BsFillPlayFill } from 'react-icons/bs'
 import { RiDeleteBin6Line } from 'react-icons/ri'
@@ -89,7 +89,7 @@ console.log(props.flag)
   </div>
          
 <div    className='phone-button'  >
-<div > <button className='button_close' style={{background: '#0061BB' ,width:'100px' ,height:'40px' ,color:'black'}}>
+<div > <button className='button_close2' style={{background: '#0061BB' ,width:'100px' ,height:'40px' ,color:'black'}}>
 
 <img
 src={Edit}
@@ -98,12 +98,14 @@ src={Edit}
               height="24 "
             
             /> Edit
-</button >   </div>
+</button >   
+
+</div>
 
  <div >
 
 
- <button className='button_closeder'  style={{background: 'white' ,width:'100px',height:'40px',color:'black',border:'none'
+ <button className='button_close'  style={{background: 'white' ,width:'100px',height:'40px',color:'black',border:'none'
 }}    >
 
 <img

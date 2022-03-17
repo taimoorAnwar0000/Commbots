@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container, Row, Col, Button ,Card} from 'react-bootstrap'
-import './chatbot.css'
+import './chatbot.scss'
 import { MdArrowForwardIos } from 'react-icons/md'
 import { BsFillPlayFill } from 'react-icons/bs'
 import { RiDeleteBin6Line } from 'react-icons/ri'
@@ -20,6 +20,11 @@ import Mobile from '../images/mobile.png'
 
 const ChatBotcard = () => {
   return (
+
+
+
+
+    
     <div> <Card style={{  background: '#32be8a4d' }} className='Home-card'  >
     <Card.Body>
       <Card.Title> 
