@@ -19,20 +19,21 @@
   border-radius: 10px;
 }
 
-.khan{
+.khan {
+  border-radius: 10px;
   background-color: white;
-  padding: 20px;
+  padding: 34px;
   margin-top: 20px;
-  box-shadow: 0px 0px 14px rgba(0,0,0.5)
+  box-shadow: 0px 0px 14px rgba(0, 0, 0.5);
 }
 
-.giving_it{
+.giving_it {
   display: flex !important;
   flex-direction: row !important;
 }
 
-.main_chat_bot{
-  background-color: #E5E5E5;
+.main_chat_bot {
+  background-color: #e5e5e5;
 }
 
 .ajhv {
@@ -59,11 +60,10 @@
   align-items: center;
   height: 100px;
   border-radius: 10px;
-  
 }
 
-.aroundit{
-  display:flex !important;
+.aroundit {
+  display: flex !important;
 }
 
 .add-button {
@@ -91,17 +91,50 @@
 .btn {
   border-radius: 30px !important;
 }
+.cardIcon {
+  display: flex;
+  justify-content: space-between;
+}
 .edit-button {
   width: 171px !important;
   height: 60px !important;
   border-radius: 30px;
   border: none;
+  margin-left: 10px;
+  color: white !important;
+
+  @media (max-width: 430px) {
+    width: 140px !important;
+    height: 50px;
+  }
+  @media (max-width: 1120px) {
+    width: 150px !important;
+    height: 50px;
+  }
+}
+.hr-tag {
+  margin: 0px;
+}
+.card-row {
+  margin-top: 30px !important;
+}
+.mainbottext {
+  border-bottom: 2px solid #32be8a !important;
 }
 .reset-button {
   width: 171px !important;
   height: 60px !important;
   border-radius: 30px;
   border: none;
+  margin-left: 10px;
+  @media (max-width: 430px) {
+    width: 140px !important;
+    height: 50px;
+  }
+  @media (min-width: 990px) and (max-width: 1120px) {
+    width: 150px !important;
+    height: 50px;
+  }
 }
 
 .btn img {
@@ -109,7 +142,7 @@
 }
 .chatbot-img-mobile {
   width: 100% !important;
-  height: 700px;
+  height: 600px;
 }
 .mobile-portion {
   display: flex;
@@ -140,7 +173,7 @@
   box-sizing: border-box;
   border-radius: 30px !important;
 
-  font-family: 'Hind';
+  font-family: "Hind";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -153,6 +186,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 34px;
+  margin-bottom: 140px;
   /* margin-left: 100px; */
 }
 .Chatbotbutton {
@@ -173,36 +208,30 @@
   /* padding-left: 50px; */
 }
 
-
-.button_close{
+.button_close {
   width: 220px !important;
-  height: 60px !important;  
+  height: 60px !important;
   font-size: 24px !important;
   border-radius: 30px !important;
   border: none !important;
 }
-.button_close2{
+.button_close2 {
   width: 220px !important;
-  height: 60px !important;  
-  background: #0061BB !important;
+  height: 60px !important;
+  background: #0061bb !important;
   border-radius: 30px !important;
   border: none !important;
   font-size: 24px !important;
 }
 
-
-.button_close img{
-
+.button_close img {
   width: 24px !important;
   height: 24px !important;
 }
-.button_close2 img{
-
+.button_close2 img {
   width: 24px !important;
   height: 24px !important;
 }
-
-
 
 @media (max-width: 1200px) {
   .chat-bot-row2 {
@@ -210,27 +239,27 @@
   }
 }
 
-@media (min-width: 770px) and (max-width: 850px) {
-  .mobile-pic {
-    margin-left: 140px;
-  }
-}
-@media (min-width: 520px) and (max-width: 760px) {
-  .mobile-pic {
-    margin-left: 50px;
-  }
-}
-@media (min-width: 320px) and (max-width: 520px) {
-  .mobile-pic {
-    margin-left: 20px;
-  }
-}
+// @media (min-width: 770px) and (max-width: 850px) {
+//   .mobile-pic {
+//     margin-left: 140px;
+//   }
+// }
+// @media (min-width: 520px) and (max-width: 760px) {
+//   .mobile-pic {
+//     margin-left: 50px;
+//   }
+// }
+// @media (min-width: 320px) and (max-width: 520px) {
+//   .mobile-pic {
+//     margin-left: 20px;
+//   }
+// }
 
-@media (min-width: 1250px) and (max-width: 1550px) {
-  .add-button {
-    margin-left: 50px;
-  }
-}
+// @media (min-width: 1250px) and (max-width: 1550px) {
+//   .add-button {
+//     margin-left: 50px;
+//   }
+// }
 
 @media (max-width: 1720px) {
   .chat-bot-row2 {
