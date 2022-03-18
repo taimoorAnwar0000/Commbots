@@ -86,6 +86,7 @@ const Chat = () => {
               duis deserunt mollit dolore cillum minim tempor
               enim. Elit aute irure tempor cupidatat incididunt sint
               deserunt ut voluptate aute id deserunt nisi.
+              <div className='ten'>10min</div>
             </p>
 
 
@@ -120,6 +121,7 @@ const Chat = () => {
               <p className='text_1'>
 
                 What's the progress on that task?
+                <div className='ten'>10 min</div>
               </p>
 
 

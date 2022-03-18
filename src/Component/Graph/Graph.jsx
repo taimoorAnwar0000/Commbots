@@ -110,6 +110,8 @@ const Graph = (props) => {
 
   return (
     <>
+<div className='stay_away'> 
+
 
 <div className={props.state==false?'chatbotmainclass':'chatbotmain2'}>
 
@@ -125,6 +127,7 @@ const Graph = (props) => {
               <img src={calender} />
               <LocalizationProvider dateAdapter={AdapterDateFns}>
                 <DatePicker
+                
                   label="  09/02/22 - 15/02/22"
                   value={value}
                   onChange={(newValue) => {
@@ -441,6 +444,9 @@ const Graph = (props) => {
       </div>
 
       </div>
+
+
+</div>
 
     </>
   );
