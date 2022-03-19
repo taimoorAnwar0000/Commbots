@@ -7,7 +7,7 @@
   justify-content: center;
   align-items: center;
 }
-.Navbar1{
+.Navbar1 {
   margin-bottom: 20px;
 }
 
@@ -61,8 +61,12 @@
   font-weight: 400 !important;
   font-size: 22px !important;
   font-family: Hind !important;
-  padding-left: 4px;
+  padding-left: 7px;
 }
+/* .image-icon1{
+  position: relative;
+  top: -5px;
+} */
 
 .icon_texts {
   font-weight: 400;
@@ -70,11 +74,14 @@
   font-family: Hind;
   color: white;
 }
+.secondnavbar a{
+font-size: 50px !important;
+}
 
 .Navbar1 a {
   color: #555555;
 }
-.addbuttonpadding{
+.addbuttonpadding {
   margin-right: 10px;
 }
 .icon_text2 {
@@ -169,7 +176,7 @@
 @media (max-width: 1440px) {
   .img {
     /* padding-top: 5px !important; */
-    width: 14px 
+    width: 14px;
   }
 
   #message_iconed {
@@ -210,7 +217,7 @@
 .Admin-right {
   position: absolute;
   margin-top: 20px;
-  right: 0px;
+  right: 30px;
 }
 .navbar-collapse {
   padding-top: 30px;
@@ -269,6 +276,7 @@
   }
   .secondnavbar {
     display: block;
+  
   }
   .sidebaricon {
     display: none;

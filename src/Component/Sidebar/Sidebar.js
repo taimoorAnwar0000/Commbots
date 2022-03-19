@@ -64,8 +64,7 @@ const Sidebar = (props) => {
 <CDBSidebarMenuItem > <div className='d-flex'> <span className='mr-2'>   <img
                 src={Agent}
                 alt="Girl in a jacket"
-                width="20"
-                height="20"
+               style={{filter:'brightness(25)'}}
                 className='label'
 
               /> </span>  <span> <Form.Select aria-label="Default select example" className='selector' >  

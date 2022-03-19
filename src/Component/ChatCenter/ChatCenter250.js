@@ -33,7 +33,7 @@ const ChatCenter250 = () => {
 
 
           </Col>
-          <Col lg={2} md={2} sm={2} xs={2}    ><HiOutlineDotsVertical /> </Col>
+          <Col className='three_dots'  lg={2} md={2} sm={2} xs={2}    ><HiOutlineDotsVertical /> </Col>
 
 
 

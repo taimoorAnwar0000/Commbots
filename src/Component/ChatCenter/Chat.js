@@ -103,6 +103,7 @@ const Chat = () => {
               qui esse pariatur duis deserunt mollit dolore cillum minim tempor
               enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut
               voluptate aute id deserunt nisi.
+              <div className="ten">10min</div>
             </p>
 
             <Dropdown as={ButtonGroup}>
@@ -139,7 +140,10 @@ const Chat = () => {
         <div className="msg_sent">
           <div>
             <div className="message_2">
-              <p className="text_1">What's the progress on that task?</p>
+              <p className="text_1">
+                What's the progress on that task?
+                <div className="ten">10 min</div>
+              </p>
 
               <Dropdown as={ButtonGroup}>
                 <Button variant="success"> </Button>
