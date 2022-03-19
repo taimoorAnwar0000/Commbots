@@ -227,6 +227,15 @@ const Graph = (props) => {
       </div>
 
       <div className="main_graph">
+
+<div className="go_left">
+
+
+<div className="get_left">
+
+
+
+
         <div className="graph_sidebar">
           <div className="sliderbar_start">
             <div className="sidebar_content">
@@ -306,6 +315,11 @@ const Graph = (props) => {
             </div>
         </div>
           </div>
+
+</div>
+
+
+</div>
 
         <div className="graph_content">
           <div className="graph_start">
