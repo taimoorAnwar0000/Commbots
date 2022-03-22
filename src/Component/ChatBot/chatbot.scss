@@ -53,6 +53,11 @@
   /* padding: 10px; */
   padding-left: 10px;
   padding-top: 10px;
+
+  @media (max-width: 1440px) {
+    font-size: 20px;
+    padding-top: 0px !important;
+  }
 }
 .chat-bot-row2 {
   background: #333333;
@@ -85,6 +90,13 @@
   align-items: center;
 }
 
+@media (max-width: 1440px) {
+  .aroundit img {
+    width: 25px;
+    height: 25px;
+  }
+}
+
 .add-button img {
   margin-right: 10px;
 }
@@ -94,6 +106,10 @@
 .cardIcon {
   display: flex;
   justify-content: space-between;
+  @media (min-width: 990px) and (max-width: 1100px) {
+    display: flex;
+    justify-content: center;
+  }
 }
 .edit-button {
   width: 171px !important;
