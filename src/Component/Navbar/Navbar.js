@@ -126,7 +126,7 @@ const NavbarChatbot = (props) => {
                         >
                           Home
                         </span>
-                      </Link>{" "}
+                      </Link>
                     </div>
                   </div>
 
@@ -135,14 +135,12 @@ const NavbarChatbot = (props) => {
                       className={changecolor == 2 ? "color1" : "colorChange"}
                       onClick={handleClick2}
                     >
-                      {" "}
                       <BsChatText
                         className={
                           changecolor == 2 ? "image-icon1" : "image-icon"
                         }
-                      />{" "}
+                      />
                       <Link to="/mainchat " className="navbar-link">
-                        {" "}
                         <span
                           id="texted_icon"
                           className={
@@ -151,7 +149,7 @@ const NavbarChatbot = (props) => {
                         >
                           ChatCenter
                         </span>
-                      </Link>{" "}
+                      </Link>
                     </div>
                   </div>
 
