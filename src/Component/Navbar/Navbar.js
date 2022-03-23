@@ -114,7 +114,7 @@ const NavbarChatbot = (props) => {
                     >
                       <BiHomeAlt
                         className={
-                          changecolor == 1 ? "image-icon1" : "image-icon"
+                          changecolor == 1 ? "image-icon1" : "image-icon "
                         }
                       />
                       <Link to="/ " className="navbar-link">
@@ -339,19 +339,32 @@ const NavbarChatbot = (props) => {
                 <Offcanvas.Title id="offcanvasNavbarLabel"></Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>
-                <Nav className="me-auto my-2 my-lg-0  item-start " navbarScroll>
+                <Nav
+                  className="me-auto my-2 my-lg-0  item-start pt-3 "
+                  navbarScroll
+                >
                   <Link
                     to="/ "
                     className=""
-                    style={{ color: "#555555", textDecoration: "none" }}
+                    style={{
+                      color: "#555555",
+                      textDecoration: "none",
+                      fontSize: "30px",
+                      fontWeight: "500",
+                    }}
                   >
                     {" "}
                     Home
                   </Link>
                   <Link
                     to="#action1 "
-                    className="mr-5"
-                    style={{ color: "#555555", textDecoration: "none" }}
+                    className="mr-5 pt-3"
+                    style={{
+                      color: "#555555",
+                      textDecoration: "none",
+                      fontSize: "30px",
+                      fontWeight: "500",
+                    }}
                   >
                     {" "}
                     ChatCenter
@@ -359,48 +372,73 @@ const NavbarChatbot = (props) => {
 
                   <Link
                     to="/mainchat "
-                    className="d-flex"
-                    style={{ color: "#555555", textDecoration: "none" }}
+                    className="d-flex pt-3"
+                    style={{
+                      color: "#555555",
+                      textDecoration: "none",
+                      fontSize: "30px",
+                      fontWeight: "500",
+                    }}
                   >
                     {" "}
-                    Messege <RiArrowDropDownLine />
+                    Messege
                   </Link>
 
                   <Link
                     to="/chatbot "
-                    className="d-flex"
-                    style={{ color: "#555555", textDecoration: "none" }}
+                    className="d-flex pt-3"
+                    style={{
+                      color: "#555555",
+                      textDecoration: "none",
+                      fontSize: "30px",
+                      fontWeight: "500",
+                    }}
                   >
                     {" "}
-                    Chatbot <RiArrowDropDownLine />
+                    Chatbot
                   </Link>
 
                   <Link
                     to=" "
-                    className="d-flex"
-                    style={{ color: "#555555", textDecoration: "none" }}
+                    className="d-flex pt-3"
+                    style={{
+                      color: "#555555",
+                      textDecoration: "none",
+                      fontSize: "30px",
+                      fontWeight: "500",
+                    }}
                   >
                     {" "}
-                    Setting <RiArrowDropDownLine />
+                    Setting
                   </Link>
                   <Link
                     to=" "
-                    className="d-flex"
-                    style={{ color: "#555555", textDecoration: "none" }}
+                    className="d-flex pt-3"
+                    style={{
+                      color: "#555555",
+                      textDecoration: "none",
+                      fontSize: "30px",
+                      fontWeight: "500",
+                    }}
                   >
                     {" "}
-                    Reports <RiArrowDropDownLine />
+                    Reports
                   </Link>
 
                   <div className="Admin-right">
-                    <span className="messege-icon ml-5">
+                    <span className="messege-icon ">
                       <Link
                         to=" "
-                        className="d-flex"
-                        style={{ color: "#555555", textDecoration: "none" }}
+                        className="d-flex pt-3 pb-5"
+                        style={{
+                          color: "#555555",
+                          textDecoration: "none",
+                          fontSize: "30px",
+                          fontWeight: "500",
+                        }}
                       >
                         {" "}
-                        Admin <RiArrowDropDownLine />
+                        Admin
                       </Link>
                     </span>
                   </div>

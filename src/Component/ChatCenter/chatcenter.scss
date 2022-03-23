@@ -187,6 +187,9 @@ margin-top: 44px;
 
 .chat_part {
   background: #e5e5e5;
+  @media (max-width:990px){
+    padding-top: 100px;
+  }
 }
 
 .message_1 {
@@ -203,6 +206,9 @@ margin-top: 44px;
   border: none !important;
   margin-left: 28px;
 
+  @media (max-width: 990px) {
+    margin-top: -50px;
+  }
   @media (max-width: 650px) {
     width: 95% !important;
   }
@@ -324,9 +330,17 @@ margin-top: 44px;
   display: flex;
   align-items: center;
   gap: 2rem;
-  margin-top: 525px;
+  // margin-top: 525px;
   padding-left: 30px;
   padding-right: 30px;
+  position: fixed;
+    bottom: 0;
+    width: 66%;
+  @media (max-width: 990px) {
+    
+    position:inherit !important;
+    width: 100%;
+  }
   @media (max-width: 380px) {
     gap: 0.5rem;
   }

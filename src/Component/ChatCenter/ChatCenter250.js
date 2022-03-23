@@ -16,6 +16,7 @@ const ChatCenter250 = () => {
           <Col lg={10} md={10} sm={10} xs={10} >
 
             <div className='d-flex  chatcenter '>
+            
               <h6>Chat Center</h6>
 
               <div className='chat250image' >    <img
