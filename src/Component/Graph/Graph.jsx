@@ -303,11 +303,11 @@ const Graph = (props) => {
                 <div className="graph_1">
                   {/* <div className="graph1_title">Recieved Messages</div> */}
 
-                  <Line options={options} data={data} />
+                  <Line options={options} data={data} style={{width:'100%', height:'auto'}} />
                 </div>
 
                 <div className="graph_2">
-                  <Line options={options} data={data} />
+                  <Line options={options} data={data} style={{width:'100%', height:'auto'}} />
                 </div>
               </div>
 
