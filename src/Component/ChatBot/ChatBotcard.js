@@ -63,8 +63,7 @@ const ChatBotcard = () => {
                   />
                 </Card.Link>
               </div>
-              {/* </Col> */}
-              {/* <Col lg={4} md={4} sm={2} xs={2}> */}{" "}
+
               <div>
                 <Card.Link href="#">
                   <img
@@ -76,8 +75,6 @@ const ChatBotcard = () => {
                   />
                 </Card.Link>
               </div>
-              {/* </Col> */}
-              {/* <Col lg={4} md={4} sm={2} xs={2}> */}{" "}
               <div>
                 <Card.Link href="#">
                   <img
@@ -89,7 +86,6 @@ const ChatBotcard = () => {
                   />
                 </Card.Link>
               </div>
-              {/* </Col> */}
             </div>
           </Row>
         </Card.Body>

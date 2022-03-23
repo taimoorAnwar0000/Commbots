@@ -1,77 +1,47 @@
+import React, { useState } from "react";
 
-import React,{useState} from 'react';
-
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 import {
   BrowserRouter as Router,
   Switch,
   Route,
   Routes,
-  Link
+  Link,
 } from "react-router-dom";
-import Login from './Component/Login/Login';
-import ChatBot from './Component/ChatBot/ChatBot';
-import NavbarChatbot from './Component/Navbar/Navbar'
-import Sidebar from './Component/Sidebar/Sidebar';
-import ChatBotcard from './Component/ChatBot/ChatBotcard';
-import ChatCenter250 from './Component/ChatCenter/ChatCenter250';
-import ChartCard from './Component/ChatCenter/ChartCard';
-import Chat from './Component/ChatCenter/Chat';
-import ChatCenter from './Component/ChatCenter/ChatCenter';
-import Graph from './Component/Graph/Graph'
-
-
-
-
-
+import Login from "./Component/Login/Login";
+import ChatBot from "./Component/ChatBot/ChatBot";
+import NavbarChatbot from "./Component/Navbar/Navbar";
+import Sidebar from "./Component/Sidebar/Sidebar";
+import ChatBotcard from "./Component/ChatBot/ChatBotcard";
+import ChatCenter250 from "./Component/ChatCenter/ChatCenter250";
+import ChartCard from "./Component/ChatCenter/ChartCard";
+import Chat from "./Component/ChatCenter/Chat";
+import ChatCenter from "./Component/ChatCenter/ChatCenter";
+import Graph from "./Component/Graph/Graph";
 
 function App() {
-
-const [state,setState]=useState(true)
-
-console.log('stt',state);
-
+  const [state, setState] = useState(true);
 
   return (
-<>
+    <>
+      <Router>
+        <NavbarChatbot setState={setState} />
 
+        <Routes>
+          <Route path="/login" element={<Login />} />
+          <Route path="/chatbot" element={<ChatBot state={state} />} />
 
-
-    <Router>
-      <NavbarChatbot   setState={setState} /> 
-     
-
-    <Routes>
-      <Route path="/login" element={<Login />} />
-      <Route path="/chatbot" element={<ChatBot  state={state}/>} />
-    
-      <Route path="/sidebar" element={<Sidebar />} />
-      <Route path="/card" element={<ChatBotcard />} />
-      <Route path="/chatCenter" element={<ChatCenter250   />} />
-      <Route path="/chatcard" element={<ChartCard   />} />
-      <Route path="/chat" element={<Chat   />} />
-      <Route path="/mainchat" element={<ChatCenter state={state}/>} />
-      <Route path="/" element={<Graph state={state} /> } />
-      
-
-
-
-
-
-
-
-
-
-
-
-     
-     </Routes>
-   </Router>
-
- 
-
-   </>
+          <Route path="/sidebar" element={<Sidebar />} />
+          <Route path="/card" element={<ChatBotcard />} />
+          <Route path="/chatCenter" element={<ChatCenter250 />} />
+          <Route path="/chatcard" element={<ChartCard />} />
+          <Route path="/chat" element={<Chat />} />
+          <Route path="/mainchat" element={<ChatCenter state={state} />} />
+          <Route path="/" element={<Graph state={state} />} />
+        </Routes>
+      </Router>
+    </>
   );
 }
 

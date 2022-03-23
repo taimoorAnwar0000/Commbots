@@ -34,15 +34,20 @@ import { BsBell } from "react-icons/bs";
 import { GoGraph } from "react-icons/go";
 
 import { BrowserRouter, Route, Link } from "react-router-dom";
+import { parseISOWithOptions } from "date-fns/fp";
+import { id } from "date-fns/locale";
 
 const NavbarChatbot = (props) => {
+  // const { disabled } = props;
   const [changecolor, setChangeColor] = useState(0);
+  const [disabled, setDisabled] = useState(true);
 
   const [flag, setFlag] = useState(true);
 
   const handleClick1 = () => {
     console.log("buton click");
     setChangeColor(1);
+    setFlag(true);
   };
   const handleClick2 = () => {
     console.log("buton click");
@@ -57,16 +62,19 @@ const NavbarChatbot = (props) => {
   const handleClick4 = () => {
     console.log("buton click");
     setChangeColor(4);
+    setFlag(true);
   };
 
   const handleClick5 = () => {
     console.log("buton click");
     setChangeColor(5);
+    setFlag(true);
   };
 
   const handleClick6 = () => {
     console.log("buton click");
     setChangeColor(6);
+    setFlag(true);
   };
   const handleClick7 = () => {
     console.log("buton click");
@@ -77,21 +85,25 @@ const NavbarChatbot = (props) => {
     setFlag(true);
   };
 
-  useEffect(() => {}, [flag]);
-
   return (
     <Container fluid>
       <div className="Navbar1">
         <Row>
           <Navbar bg="white" expand="lg">
             <Container fluid>
-              <Navbar.Brand href="#">
+              <Navbar.Brand>
                 <GiHamburgerMenu
+                  // style={{ display: disabled ? "none" : "block" }}
                   className="sidebaricon"
                   // onClick={handleFlage}
                   onClick={() => {
-                    setFlag(!flag);
-                    props.setState(!flag);
+                    if (window.location.pathname === "/mainchat") {
+                      setFlag(!flag);
+                      props.setState(!flag);
+                    } else {
+                      setFlag(true);
+                      disabled = "true";
+                    }
                   }}
                 />
 
