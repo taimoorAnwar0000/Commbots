@@ -493,9 +493,10 @@ margin-top: 44px;
 .button_closeder {
   width: 130px !important;
   height: 35px !important;
-
-  border: 1px solid #32be8a;
+  background-color: white;
+  border: 1px solid #32be8a !important;
   box-sizing: border-box;
+  color: #32be8a !important;
   border-radius: 5px !important;
 
   font-family: "Hind";
