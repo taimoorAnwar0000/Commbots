@@ -135,6 +135,10 @@ const NavbarChatbot = (props) => {
                           className={
                             changecolor == 1 ? "icon_texts" : "icon_text2"
                           }
+                          onClick={() => {
+                            setFlag(true);
+                            props.setState(true);
+                          }}
                         >
                           Home
                         </span>
@@ -211,6 +215,10 @@ const NavbarChatbot = (props) => {
                           className={
                             changecolor == 4 ? "icon_texts" : "icon_text2"
                           }
+                          onClick={() => {
+                            setFlag(true);
+                            props.setState(true);
+                          }}
                         >
                           Chatbot
                         </span>{" "}
@@ -236,6 +244,10 @@ const NavbarChatbot = (props) => {
                           className={
                             changecolor == 5 ? "icon_texts" : "icon_text2"
                           }
+                          onClick={() => {
+                            setFlag(true);
+                            props.setState(true);
+                          }}
                         >
                           Setting
                         </span>{" "}
@@ -268,6 +280,10 @@ const NavbarChatbot = (props) => {
                           className={
                             changecolor == 6 ? "icon_texts" : "icon_text2"
                           }
+                          onClick={() => {
+                            setFlag(true);
+                            props.setState(true);
+                          }}
                         >
                           Reports
                         </span>{" "}
@@ -310,6 +326,10 @@ const NavbarChatbot = (props) => {
                           className={
                             changecolor == 7 ? "icon_texts" : "icon_text2"
                           }
+                          onClick={() => {
+                            setFlag(true);
+                            props.setState(true);
+                          }}
                         >
                           Admin
                         </span>{" "}
