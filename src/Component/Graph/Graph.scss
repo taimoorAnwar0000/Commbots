@@ -3,13 +3,15 @@
     display: none;
   }
 
-  .graph_1 {
-    width: 640px !important;
-    height: 420px !important;
+  .graph_1 > * {
+    width: 100% !important;
+    // width: 640px !important;
+    // height: 420px !important;
   }
-  .graph_2 {
-    width: 640px !important;
-    height: 420px !important;
+  .graph_2 > * {
+    width: 100% !important;
+    // width: 640px !important;
+    // height: 420px !important;
   }
   .datepickerclass label {
     color: #555555 !important;
@@ -29,7 +31,7 @@
     }
   }
   .graph_content {
-    padding-right: 32px;
+    margin-right: 60px;
   }
 
   .sliderbar_start {
@@ -56,45 +58,56 @@
     }
 
     .get_left {
-      margin-left: 60px;
-      width: 80%;
+      margin: 0 60px;
+      width: 100%;
+      
     }
 
     .graph_1 {
-      margin-left: 60px;
+      margin: 0 60px;
+      width: 100%;
     }
 
     .graph_1 {
-      margin-left: 60px;
+      margin: 0 60px;
+      width: 100%;
     }
     .graph_2 {
-      margin-left: 60px;
+      margin: 0 60px;
+      width: 100%;
     }
     .table_1 {
-      margin-left: 60px;
+      margin: 0 60px;
+      width: 100%;
     }
     .table_2 {
-      margin-left: 60px;
+      margin: 0 60px;
+      width: 100%;
     }
   }
 
   @media (max-width: 400px) {
     .get_left {
       margin-left: 40px;
+      margin-right: 40px;
     }
 
     .graph_1 {
       margin-left: 40px;
+      margin-right: 40px;
     }
 
     .graph_1 {
       margin-left: 40px;
+      margin-right: 40px;
     }
     .graph_2 {
       margin-left: 40px;
+      margin-right: 40px;
     }
     .table_1 {
       margin-left: 40px;
+      margin-right: 40px;
     }
     .table_2 {
       margin-left: 40px;
@@ -105,11 +118,12 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
-    @media (max-width: 1290px) {
+    @media (max-width: 1000px) {
       // display: flex !important;
       display: block;
       // max-width: -webkit-fill-available;
       width: 100%;
+      height: auto;
       // flex-direction: column;
     }
     @media (max-width: 480px) {
@@ -118,6 +132,7 @@
       // justify-content: center;
       // align-items: center;
       width: 100% !important;
+      height: auto;
     }
   }
 
@@ -127,36 +142,37 @@
     border-radius: 10px;
     height: fit-content;
     @media (max-width: 2570px) {
-      width: 640px !important;
-      height: 420px !important;
+      width: 100% !important;
+      height: auto !important;
     }
-    @media (max-width: 850px) {
-      width: 400px !important;
+    @media (max-width: 950px) {
+      width: 100% !important;
+      height: auto !important;
     }
     @media (max-width: 650px) {
-      width: 100%;
+      max-width: 520px !important;
+      height: auto;
     }
-
-    @media (max-width: 480px) {
-      width: 380px !important;
-      height: 260px !important;
-    }
-    @media (max-width: 460px) {
-      width: 360px !important;
-      height: 260px !important;
-    }
-    @media (max-width: 440px) {
-      width: 340px !important;
-      height: 260px !important;
-    }
-    @media (max-width: 400px) {
-      width: 300px !important;
-      height: 260px !important;
-    }
-    @media (max-width: 360px) {
-      width: 290px !important;
-      height: 260px !important;
-    }
+    // @media (max-width: 480px) {
+    //   width: 380px !important;
+    //   height: 260px !important;
+    // }
+    // @media (max-width: 460px) {
+    //   width: 360px !important;
+    //   height: 260px !important;
+    // }
+    // @media (max-width: 440px) {
+    //   width: 340px !important;
+    //   height: 260px !important;
+    // }
+    // @media (max-width: 400px) {
+    //   width: 300px !important;
+    //   height: 260px !important;
+    // }
+    // @media (max-width: 360px) {
+    //   width: 290px !important;
+    //   height: 260px !important;
+    // }
   }
 
   .graph_2 {
@@ -166,35 +182,38 @@
     border-radius: 10px;
 
     @media (max-width: 2570px) {
-      width: 640px !important;
-      height: 420px !important;
+      width: 100% !important;
+      height: auto !important;
     }
-    @media (max-width: 850px) {
-      width: 400px !important;
+    @media (max-width: 950px) {
+      width: 100% !important;
+      height: auto !important;
+      margin-top: 20px;
     }
     @media (max-width: 650px) {
-      width: 100%;
+      max-width: 520px !important;
+      height: auto;
     }
-    @media (max-width: 480px) {
-      width: 380px !important;
-      height: 260px !important;
-    }
-    @media (max-width: 460px) {
-      width: 360px !important;
-      height: 260px !important;
-    }
-    @media (max-width: 440px) {
-      width: 340px !important;
-      height: 260px !important;
-    }
-    @media (max-width: 400px) {
-      width: 300px !important;
-      height: 260px !important;
-    }
-    @media (max-width: 360px) {
-      width: 290px !important;
-      height: 260px !important;
-    }
+    // @media (max-width: 480px) {
+    //   width: 380px !important;
+    //   height: 260px !important;
+    // }
+    // @media (max-width: 460px) {
+    //   width: 360px !important;
+    //   height: 260px !important;
+    // }
+    // @media (max-width: 440px) {
+    //   width: 340px !important;
+    //   height: 260px !important;
+    // }
+    // @media (max-width: 400px) {
+    //   width: 300px !important;
+    //   height: 260px !important;
+    // }
+    // @media (max-width: 360px) {
+    //   width: 290px !important;
+    //   height: 260px !important;
+    // }
   }
 
   .slidebar_icons {
@@ -297,7 +316,7 @@
   /* mui */
 
   .table_1 {
-    width: -webkit-fill-available;
+    width: 100%;
 
     background: #ffffff;
     box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.05);
@@ -424,7 +443,7 @@
   }
 
   .table_2 {
-    width: -webkit-fill-available;
+    width: 100%;
 
     background: #ffffff;
     box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.05);
@@ -563,7 +582,7 @@
   .main_bar {
     margin-top: 30px;
     margin-right: 30px;
-
+    margin-left: 30px;
     @media (max-width: 650px) {
       margin-right: 0 !important;
     }

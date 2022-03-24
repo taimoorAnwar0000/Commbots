@@ -50,8 +50,7 @@ const Chat = () => {
         <div className="profile-text">
           <div className="MM-clothing">
             <div>
-              {" "}
-              <h6 className="r_fox">Robert Fox</h6>{" "}
+              <h6 className="r_fox">Robert Fox</h6>
             </div>
             <div className="mmtext">MM Clothing</div>
           </div>
@@ -73,16 +72,15 @@ const Chat = () => {
             </div>
             <div>
               <button className="button_closeder"> Closed </button>
-            </div>{" "}
+            </div>
           </div>
           <div className="icon">
-            {" "}
             <BsArrow90DegRight style={{ color: "#F8D418" }} />
             <MdPersonOutline /> <AiOutlineFile />
             <MdOutlineBookmarkBorder />
             <ImAttachment />
-            <BsShare />{" "}
-          </div>{" "}
+            <BsShare />
+          </div>
         </div>
 
         <hr></hr>
@@ -90,7 +88,7 @@ const Chat = () => {
 
       <div className="bell">
         <div className="name ">
-          Jerome Bell <span className="circle">01 </span>{" "}
+          Jerome Bell <span className="circle">01 </span>
         </div>
         <div className="name">Cameron</div>
         <div className="name">Phyllis Gol.. </div>

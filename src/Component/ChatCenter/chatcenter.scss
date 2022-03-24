@@ -398,11 +398,17 @@ margin-top: 44px;
     width: -webkit-fill-available;
   }
 
+
+  
+
+
   .input_chat {
     position: relative;
     width: -webkit-fill-available;
     height: 80px;
     border: none;
+    padding-left: 30px;
+    font-size: 25px;
     outline: none;
     background: #f5f7fb;
     border-radius: 40px;
@@ -507,9 +513,10 @@ margin-top: 44px;
 .button_closeder {
   width: 130px !important;
   height: 35px !important;
-
-  border: 1px solid #32be8a;
+  background-color: white;
+  border: 1px solid #32be8a !important;
   box-sizing: border-box;
+  color: #32be8a !important;
   border-radius: 5px !important;
 
   font-family: "Hind";
@@ -558,3 +565,28 @@ margin-top: 44px;
   background-color: transparent;
   border: 0;
 }
+
+.bbb{
+// display: none;
+}
+
+
+
+.hover_icon{
+
+  display:none;
+
+  
+}
+
+
+// .hover_arrow:hover  .hover_icon {
+//  display:block !important;
+ 
+// }
+
+.hhh:hover  .hover_icon{
+  display: block !important;
+  } 
+
+

@@ -23,9 +23,7 @@ const ChatBot = (props) => {
 
   return (
     <div className="main_chat_bot">
-      <div
-        className={props.state == false ? " chatbotmainclass" : "chatbotmain2"}
-      >
+      <div className="chatbotmain2">
         {/* <Link>dddd</Link> */}
         <Container fluid className="mt-3">
           <Row>

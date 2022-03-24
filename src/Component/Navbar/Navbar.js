@@ -34,15 +34,20 @@ import { BsBell } from "react-icons/bs";
 import { GoGraph } from "react-icons/go";
 
 import { BrowserRouter, Route, Link } from "react-router-dom";
+import { parseISOWithOptions } from "date-fns/fp";
+import { id } from "date-fns/locale";
 
 const NavbarChatbot = (props) => {
-  const [changecolor, setChangeColor] = useState(0);
+  // const { disabled } = props;
+  const [changecolor, setChangeColor] = useState(1);
+  const [disabled, setDisabled] = useState(true);
 
   const [flag, setFlag] = useState(true);
 
   const handleClick1 = () => {
     console.log("buton click");
     setChangeColor(1);
+    setFlag(true);
   };
   const handleClick2 = () => {
     console.log("buton click");
@@ -57,16 +62,19 @@ const NavbarChatbot = (props) => {
   const handleClick4 = () => {
     console.log("buton click");
     setChangeColor(4);
+    setFlag(true);
   };
 
   const handleClick5 = () => {
     console.log("buton click");
     setChangeColor(5);
+    setFlag(true);
   };
 
   const handleClick6 = () => {
     console.log("buton click");
     setChangeColor(6);
+    setFlag(true);
   };
   const handleClick7 = () => {
     console.log("buton click");
@@ -77,21 +85,25 @@ const NavbarChatbot = (props) => {
     setFlag(true);
   };
 
-  useEffect(() => {}, [flag]);
-
   return (
     <Container fluid>
       <div className="Navbar1">
         <Row>
           <Navbar bg="white" expand="lg">
             <Container fluid>
-              <Navbar.Brand href="#">
+              <Navbar.Brand>
                 <GiHamburgerMenu
+                  // style={{ display: disabled ? "none" : "block" }}
                   className="sidebaricon"
                   // onClick={handleFlage}
                   onClick={() => {
-                    setFlag(!flag);
-                    props.setState(!flag);
+                    if (window.location.pathname === "/mainchat") {
+                      setFlag(!flag);
+                      props.setState(!flag);
+                    } else {
+                      setFlag(true);
+                      disabled = "true";
+                    }
                   }}
                 />
 
@@ -109,12 +121,12 @@ const NavbarChatbot = (props) => {
                 <Nav className="me-auto my-2 my-lg-0  item-end " navbarScroll>
                   <div className="reportmaindiv">
                     <div
-                      className={changecolor == 1 ? "color1" : "colorChange"}
+                      className={changecolor == 1 ? "color1" : "colorChange"} //color1 when selected
                       onClick={handleClick1}
                     >
                       <BiHomeAlt
                         className={
-                          changecolor == 1 ? "image-icon1" : "image-icon "
+                          changecolor == 1 ? "image-icon1" : "image-icon " //image-icon1 when selected
                         }
                       />
                       <Link to="/ " className="navbar-link">
@@ -126,7 +138,7 @@ const NavbarChatbot = (props) => {
                         >
                           Home
                         </span>
-                      </Link>{" "}
+                      </Link>
                     </div>
                   </div>
 
@@ -135,14 +147,12 @@ const NavbarChatbot = (props) => {
                       className={changecolor == 2 ? "color1" : "colorChange"}
                       onClick={handleClick2}
                     >
-                      {" "}
                       <BsChatText
                         className={
                           changecolor == 2 ? "image-icon1" : "image-icon"
                         }
-                      />{" "}
+                      />
                       <Link to="/mainchat " className="navbar-link">
-                        {" "}
                         <span
                           id="texted_icon"
                           className={
@@ -151,7 +161,7 @@ const NavbarChatbot = (props) => {
                         >
                           ChatCenter
                         </span>
-                      </Link>{" "}
+                      </Link>
                     </div>
                   </div>
 
@@ -174,7 +184,7 @@ const NavbarChatbot = (props) => {
                             changecolor == 3 ? "icon_texts" : "icon_text2"
                           }
                         >
-                          Messege
+                          Message
                         </span>{" "}
                         <RiArrowDropDownLine className="text_arrow_up" />{" "}
                       </Link>
@@ -186,13 +196,17 @@ const NavbarChatbot = (props) => {
                       className={changecolor == 4 ? "color1" : "colorChange"}
                       onClick={handleClick4}
                     >
-                      <img
-                        src={Chatbot}
-                        alt="Girl in a jacket"
-                        width="40"
-                        className="image-icon"
-                        height="40"
-                      />
+                      <svg width="25" height="25" viewBox="0 0 32 25" stroke={`${changecolor == 4 ? "#00784B" : "#555555"}`} xmlns="http://www.w3.org/2000/svg">
+                        <rect x="6" y="8" width="20" height="16" rx="5" fill={`${changecolor == 4 ? "rgba(50, 190, 138, 0.4)" : "white"}`} stroke={`${changecolor == 4 ? "#00784B" : "#555555"}`} stroke-width="2"/>
+                        <path d="M6 12H3C1.89543 12 1 12.8954 1 14V18C1 19.1046 1.89543 20 3 20H6V12Z" fill={`${changecolor == 4 ? "rgba(50, 190, 138, 0.4)" : "white"}`} stroke={`${changecolor == 4 ? "#00784B" : "#555555"}`} stroke-width="2"/>
+                        <path d="M31 14C31 12.8954 30.1046 12 29 12H26V20H29C30.1046 20 31 19.1046 31 18V14Z" fill={`${changecolor == 4 ? "rgba(50, 190, 138, 0.4)" : "white"}`} stroke={`${changecolor == 4 ? "#00784B" : "#555555"}`} stroke-width="2"/>
+                        <rect x="12" y="12" width="2" height="4" rx="1" fill={`${changecolor == 4 ? "rgba(50, 190, 138, 0.4)" : "white"}`} stroke={`${changecolor == 4 ? "#00784B" : "#555555"}`}/>
+                        <rect x="13" y="19" width="6" height="2" rx="1" fill={`${changecolor == 4 ? "rgba(50, 190, 138, 0.4)" : "white"}`} stroke={`${changecolor == 4 ? "#00784B" : "#555555"}`}/>
+                        <rect x="18" y="12" width="2" height="4" rx="1" fill={`${changecolor == 4 ? "rgba(50, 190, 138, 0.4)" : "white"}`} stroke={`${changecolor == 4 ? "#00784B" : "#555555"}`}/>
+                        <circle cx="3.5" cy="3.5" r="2.5" fill={`${changecolor == 4 ? "rgba(50, 190, 138, 0.4)" : "white"}`} stroke={`${changecolor == 4 ? "#00784B" : "#555555"}`} stroke-width="2"/>
+                        <line x1="3.5" y1="6" x2="3.5" y2="11" fill={`${changecolor == 4 ? "rgba(50, 190, 138, 0.4)" : "white"}`} stroke={`${changecolor == 4 ? "#00784B" : "#555555"}`}/>
+                      </svg>
+
 
                       <Link to="/chatbot " className="d-flex navbar-link">
                         {" "}

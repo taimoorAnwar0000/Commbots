@@ -111,9 +111,7 @@ const Graph = (props) => {
   return (
     <>
       <div className="stay_away">
-        <div
-          className={props.state == false ? "chatbotmainclass" : "chatbotmain2"}
-        >
+        <div className="chatbotmain2">
           <div className="main_bar">
             <div className="top_bar">
               <div className="bar_home">
@@ -305,11 +303,11 @@ const Graph = (props) => {
                 <div className="graph_1">
                   {/* <div className="graph1_title">Recieved Messages</div> */}
 
-                  <Line options={options} data={data} />
+                  <Line options={options} data={data} style={{width:'100%', height:'auto'}} />
                 </div>
 
                 <div className="graph_2">
-                  <Line options={options} data={data} />
+                  <Line options={options} data={data} style={{width:'100%', height:'auto'}} />
                 </div>
               </div>
 
