@@ -322,6 +322,8 @@ margin-top: 44px;
   }
 }
 
+
+
 .type_sec {
   height: 100px;
 
@@ -335,11 +337,33 @@ margin-top: 44px;
   padding-right: 30px;
   position: fixed;
     bottom: 0;
-    width: 66%;
+    width: 57%;
+
+
+
+  @media (max-width: 2220px) {
+    
+   width: 52%;
+    
+  }
+  @media (max-width: 1370px) {
+    
+   width: 50%;
+    
+  }
+  @media (max-width: 1290px) {
+    
+   width: 48%;
+    
+  }
+
+
+
+
   @media (max-width: 990px) {
     
     position:inherit !important;
-    width: 100%;
+    width: 100% !important;
   }
   @media (max-width: 380px) {
     gap: 0.5rem;

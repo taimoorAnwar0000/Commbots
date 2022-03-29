@@ -216,6 +216,7 @@ const Chat = () => {
         })}
 
         {/* voice type section   */}
+<div className="bottom">
 
         <div className="type_sec">
           <div className="first_text">
@@ -255,6 +256,11 @@ const Chat = () => {
             <img src={msent} onClick={handleclick} />
           </div>
         </div>
+
+
+</div>
+
+
       </div>
     </div>
   );
