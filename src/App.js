@@ -26,7 +26,7 @@ function App() {
   return (
     <>
       <Router>
-        <NavbarChatbot setState={setState} />
+        <NavbarChatbot setState={setState} state={state} />
 
         <Routes>
           <Route path="/login" element={<Login />} />
@@ -34,10 +34,16 @@ function App() {
 
           <Route path="/sidebar" element={<Sidebar />} />
           <Route path="/card" element={<ChatBotcard />} />
-          <Route path="/chatCenter" element={<ChatCenter250 />} />
+          <Route
+            path="/chatCenter"
+            element={<ChatCenter250 state={state} setState={setState} />}
+          />
           <Route path="/chatcard" element={<ChartCard />} />
           <Route path="/chat" element={<Chat />} />
-          <Route path="/mainchat" element={<ChatCenter state={state} />} />
+          <Route
+            path="/mainchat"
+            element={<ChatCenter state={state} setState={setState} />}
+          />
           <Route path="/" element={<Graph state={state} />} />
         </Routes>
       </Router>

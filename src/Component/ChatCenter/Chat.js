@@ -19,7 +19,7 @@ import { ButtonGroup } from "react-bootstrap";
 import { BsArrow90DegRight } from "react-icons/bs";
 import { MdOutlineBookmarkBorder } from "react-icons/md";
 
-const Chat = () => {
+const Chat = (props) => {
   const [value, setValue] = useState();
   console.log(value);
   const [message, setMessage] = useState([]);
@@ -37,7 +37,7 @@ const Chat = () => {
 
   return (
     <div>
-      <div className="ChartCard">
+      <div className="ChartCard1">
         <div>
           <img
             className="r_img"
@@ -217,7 +217,7 @@ const Chat = () => {
 
         {/* voice type section   */}
 
-        <div className="type_sec">
+        <div className={props.state ? " type_sec" : "type_sec type_sec2"}>
           <div className="first_text">
             <Dropdown as={ButtonGroup}>
               <Button variant="success"> </Button>
@@ -237,7 +237,7 @@ const Chat = () => {
             </Dropdown>
           </div>
 
-          <div className="input_part">
+          <div className={props.state ? "input_part" : "input_part2"}>
             <div className="input_box">
               <input
                 className="input_chat"

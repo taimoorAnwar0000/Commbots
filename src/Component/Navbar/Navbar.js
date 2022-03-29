@@ -42,12 +42,14 @@ const NavbarChatbot = (props) => {
   const [changecolor, setChangeColor] = useState(1);
   const [disabled, setDisabled] = useState(true);
 
-  const [flag, setFlag] = useState(true);
+  // const [flag, setFlag] = useState(props.state);
+  console.log("state are", props.state);
 
   const handleClick1 = () => {
     console.log("buton click");
     setChangeColor(1);
-    setFlag(true);
+    // setFlag(true);
+    props.setState(true);
   };
   const handleClick2 = () => {
     console.log("buton click");
@@ -62,19 +64,22 @@ const NavbarChatbot = (props) => {
   const handleClick4 = () => {
     console.log("buton click");
     setChangeColor(4);
-    setFlag(true);
+    // setFlag(true);
+    props.setState(true);
   };
 
   const handleClick5 = () => {
     console.log("buton click");
     setChangeColor(5);
-    setFlag(true);
+    // setFlag(true);
+    props.setState(true);
   };
 
   const handleClick6 = () => {
     console.log("buton click");
     setChangeColor(6);
-    setFlag(true);
+    // setFlag(true);
+    props.setState(true);
   };
   const handleClick7 = () => {
     console.log("buton click");
@@ -82,7 +87,8 @@ const NavbarChatbot = (props) => {
   };
 
   const handleFlage = () => {
-    setFlag(true);
+    // setFlag(true);
+    props.setState(true);
   };
 
   return (
@@ -92,21 +98,6 @@ const NavbarChatbot = (props) => {
           <Navbar bg="white" expand="lg">
             <Container fluid>
               <Navbar.Brand>
-                <GiHamburgerMenu
-                  // style={{ display: disabled ? "none" : "block" }}
-                  className="sidebaricon"
-                  // onClick={handleFlage}
-                  onClick={() => {
-                    if (window.location.pathname === "/mainchat") {
-                      setFlag(!flag);
-                      props.setState(!flag);
-                    } else {
-                      setFlag(true);
-                      disabled = "true";
-                    }
-                  }}
-                />
-
                 <img
                   src={LoginImageForm}
                   alt="Girl in a jacket"
@@ -114,7 +105,7 @@ const NavbarChatbot = (props) => {
                   className="mr-5 picHeader"
                   height="49"
                 />
-                <Sidebar flag={flag} />
+                <Sidebar flag={props.state} />
               </Navbar.Brand>
               <Navbar.Toggle aria-controls="navbarScroll" />
               <Navbar.Collapse id="navbarScroll">
@@ -136,7 +127,7 @@ const NavbarChatbot = (props) => {
                             changecolor == 1 ? "icon_texts" : "icon_text2"
                           }
                           onClick={() => {
-                            setFlag(true);
+                            // setFlag(true);
                             props.setState(true);
                           }}
                         >
@@ -200,17 +191,111 @@ const NavbarChatbot = (props) => {
                       className={changecolor == 4 ? "color1" : "colorChange"}
                       onClick={handleClick4}
                     >
-                      <svg width="25" height="25" viewBox="0 0 32 25" stroke={`${changecolor == 4 ? "#00784B" : "#555555"}`} xmlns="http://www.w3.org/2000/svg">
-                        <rect x="6" y="8" width="20" height="16" rx="5" fill={`${changecolor == 4 ? "rgba(50, 190, 138, 0.4)" : "white"}`} stroke={`${changecolor == 4 ? "#00784B" : "#555555"}`} stroke-width="2"/>
-                        <path d="M6 12H3C1.89543 12 1 12.8954 1 14V18C1 19.1046 1.89543 20 3 20H6V12Z" fill={`${changecolor == 4 ? "rgba(50, 190, 138, 0.4)" : "white"}`} stroke={`${changecolor == 4 ? "#00784B" : "#555555"}`} stroke-width="2"/>
-                        <path d="M31 14C31 12.8954 30.1046 12 29 12H26V20H29C30.1046 20 31 19.1046 31 18V14Z" fill={`${changecolor == 4 ? "rgba(50, 190, 138, 0.4)" : "white"}`} stroke={`${changecolor == 4 ? "#00784B" : "#555555"}`} stroke-width="2"/>
-                        <rect x="12" y="12" width="2" height="4" rx="1" fill={`${changecolor == 4 ? "rgba(50, 190, 138, 0.4)" : "white"}`} stroke={`${changecolor == 4 ? "#00784B" : "#555555"}`}/>
-                        <rect x="13" y="19" width="6" height="2" rx="1" fill={`${changecolor == 4 ? "rgba(50, 190, 138, 0.4)" : "white"}`} stroke={`${changecolor == 4 ? "#00784B" : "#555555"}`}/>
-                        <rect x="18" y="12" width="2" height="4" rx="1" fill={`${changecolor == 4 ? "rgba(50, 190, 138, 0.4)" : "white"}`} stroke={`${changecolor == 4 ? "#00784B" : "#555555"}`}/>
-                        <circle cx="3.5" cy="3.5" r="2.5" fill={`${changecolor == 4 ? "rgba(50, 190, 138, 0.4)" : "white"}`} stroke={`${changecolor == 4 ? "#00784B" : "#555555"}`} stroke-width="2"/>
-                        <line x1="3.5" y1="6" x2="3.5" y2="11" fill={`${changecolor == 4 ? "rgba(50, 190, 138, 0.4)" : "white"}`} stroke={`${changecolor == 4 ? "#00784B" : "#555555"}`}/>
+                      <svg
+                        width="25"
+                        height="25"
+                        viewBox="0 0 32 25"
+                        stroke={`${changecolor == 4 ? "#00784B" : "#555555"}`}
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <rect
+                          x="6"
+                          y="8"
+                          width="20"
+                          height="16"
+                          rx="5"
+                          fill={`${
+                            changecolor == 4
+                              ? "rgba(50, 190, 138, 0.4)"
+                              : "white"
+                          }`}
+                          stroke={`${changecolor == 4 ? "#00784B" : "#555555"}`}
+                          stroke-width="2"
+                        />
+                        <path
+                          d="M6 12H3C1.89543 12 1 12.8954 1 14V18C1 19.1046 1.89543 20 3 20H6V12Z"
+                          fill={`${
+                            changecolor == 4
+                              ? "rgba(50, 190, 138, 0.4)"
+                              : "white"
+                          }`}
+                          stroke={`${changecolor == 4 ? "#00784B" : "#555555"}`}
+                          stroke-width="2"
+                        />
+                        <path
+                          d="M31 14C31 12.8954 30.1046 12 29 12H26V20H29C30.1046 20 31 19.1046 31 18V14Z"
+                          fill={`${
+                            changecolor == 4
+                              ? "rgba(50, 190, 138, 0.4)"
+                              : "white"
+                          }`}
+                          stroke={`${changecolor == 4 ? "#00784B" : "#555555"}`}
+                          stroke-width="2"
+                        />
+                        <rect
+                          x="12"
+                          y="12"
+                          width="2"
+                          height="4"
+                          rx="1"
+                          fill={`${
+                            changecolor == 4
+                              ? "rgba(50, 190, 138, 0.4)"
+                              : "white"
+                          }`}
+                          stroke={`${changecolor == 4 ? "#00784B" : "#555555"}`}
+                        />
+                        <rect
+                          x="13"
+                          y="19"
+                          width="6"
+                          height="2"
+                          rx="1"
+                          fill={`${
+                            changecolor == 4
+                              ? "rgba(50, 190, 138, 0.4)"
+                              : "white"
+                          }`}
+                          stroke={`${changecolor == 4 ? "#00784B" : "#555555"}`}
+                        />
+                        <rect
+                          x="18"
+                          y="12"
+                          width="2"
+                          height="4"
+                          rx="1"
+                          fill={`${
+                            changecolor == 4
+                              ? "rgba(50, 190, 138, 0.4)"
+                              : "white"
+                          }`}
+                          stroke={`${changecolor == 4 ? "#00784B" : "#555555"}`}
+                        />
+                        <circle
+                          cx="3.5"
+                          cy="3.5"
+                          r="2.5"
+                          fill={`${
+                            changecolor == 4
+                              ? "rgba(50, 190, 138, 0.4)"
+                              : "white"
+                          }`}
+                          stroke={`${changecolor == 4 ? "#00784B" : "#555555"}`}
+                          stroke-width="2"
+                        />
+                        <line
+                          x1="3.5"
+                          y1="6"
+                          x2="3.5"
+                          y2="11"
+                          fill={`${
+                            changecolor == 4
+                              ? "rgba(50, 190, 138, 0.4)"
+                              : "white"
+                          }`}
+                          stroke={`${changecolor == 4 ? "#00784B" : "#555555"}`}
+                        />
                       </svg>
-
 
                       <Link to="/chatbot " className="d-flex navbar-link">
                         {" "}
@@ -220,7 +305,7 @@ const NavbarChatbot = (props) => {
                             changecolor == 4 ? "icon_texts" : "icon_text2"
                           }
                           onClick={() => {
-                            setFlag(true);
+                            // setFlag(true);
                             props.setState(true);
                           }}
                         >
@@ -249,7 +334,7 @@ const NavbarChatbot = (props) => {
                             changecolor == 5 ? "icon_texts" : "icon_text2"
                           }
                           onClick={() => {
-                            setFlag(true);
+                            // setFlag(true);
                             props.setState(true);
                           }}
                         >
@@ -285,7 +370,7 @@ const NavbarChatbot = (props) => {
                             changecolor == 6 ? "icon_texts" : "icon_text2"
                           }
                           onClick={() => {
-                            setFlag(true);
+                            // setFlag(true);
                             props.setState(true);
                           }}
                         >
@@ -331,7 +416,7 @@ const NavbarChatbot = (props) => {
                             changecolor == 7 ? "icon_texts" : "icon_text2"
                           }
                           onClick={() => {
-                            setFlag(true);
+                            // setFlag(true);
                             props.setState(true);
                           }}
                         >

@@ -60,7 +60,6 @@
     .get_left {
       margin: 0 60px;
       width: 100%;
-      
     }
 
     .graph_1 {
@@ -630,7 +629,7 @@
     display: flex;
     align-items: center;
     justify-content: start;
-    background: #333333;
+    background: #333333 !important;
     border: none;
     box-sizing: border-box;
     border-radius: 10px;
@@ -640,7 +639,7 @@
 
     line-height: 38px;
 
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.5) !important;
 
     @media (max-width: 850px) {
       border: none !important;

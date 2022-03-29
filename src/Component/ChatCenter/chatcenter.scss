@@ -10,6 +10,13 @@
   /* justify-content: center; */
   align-items: center;
 }
+
+.ChartCard1 {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+
 .MM-clothing {
   display: flex;
 
@@ -45,11 +52,9 @@
   }
 }
 
-
-.chat250image img{
+.chat250image img {
   width: 50px !important;
 }
-
 
 .date {
   position: absolute;
@@ -98,7 +103,6 @@
   justify-content: end;
 }
 
-
 .admin_img {
   width: 45px !important;
 }
@@ -139,21 +143,19 @@
   margin-top: 10px;
 }
 
-
-.ten{
+.ten {
   position: absolute;
   right: 20px;
   font-size: 20px;
   font-weight: 400;
   font-family: Hind;
   color: #555555;
-margin-top: 44px;
+  margin-top: 44px;
 }
 
-
-.three_dots{
-  display:flex !important;
-  justify-content:end !important;
+.three_dots {
+  display: flex !important;
+  justify-content: end !important;
 }
 
 .chat-card-main {
@@ -179,6 +181,19 @@ margin-top: 44px;
   padding: 15px;
   background-color: white;
   position: relative;
+  @media (min-width: 990px) and (max-width: 1100px) {
+    flex-direction: column;
+  }
+}
+
+.ChartCard1 {
+  padding: 15px;
+  background-color: white;
+  position: relative;
+
+  @media (max-width: 990px) {
+    margin-top: 50px;
+  }
 }
 .bell {
   background-color: white;
@@ -187,7 +202,7 @@ margin-top: 44px;
 
 .chat_part {
   background: #e5e5e5;
-  @media (max-width:990px){
+  @media (max-width: 990px) {
     padding-top: 100px;
   }
 }
@@ -206,6 +221,9 @@ margin-top: 44px;
   border: none !important;
   margin-left: 28px;
 
+  @media (min-width: 990px) and (max-width: 1290px) {
+    width: 400px !important;
+  }
   @media (max-width: 990px) {
     margin-top: -50px;
   }
@@ -272,11 +290,14 @@ margin-top: 44px;
   text-align: left;
   background: #e6fdd6 !important;
   box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.1) !important;
-  border-radius:30px 30px 0px 30px !important;
+  border-radius: 30px 30px 0px 30px !important;
   border: none !important;
   padding: 14px;
   align-items: center;
   justify-content: space-around;
+  @media (min-width: 990px) and (max-width: 1290px) {
+    width: 270px !important;
+  }
 
   .text_1 p {
     max-width: 90%;
@@ -334,11 +355,18 @@ margin-top: 44px;
   padding-left: 30px;
   padding-right: 30px;
   position: fixed;
-    bottom: 0;
-    width: 66%;
+  bottom: 0;
+  width: 66%;
+  right: 1%;
+  float: right;
+
   @media (max-width: 990px) {
-    
-    position:inherit !important;
+    position: inherit !important;
+    width: 100%;
+  }
+
+  @media (max-width: 990px) {
+    position: inherit !important;
     width: 100%;
   }
   @media (max-width: 380px) {
@@ -381,26 +409,25 @@ margin-top: 44px;
   .input_part {
     width: -webkit-fill-available;
   }
+  .input_part2 {
+    width: -webkit-fill-available !important;
+  }
 
   .input_box {
     position: relative;
     // width: 700px;
-    height: 80px;
-    border: none;
-    outline: none;
-    background: #f5f7fb;
-    border-radius: 40px;
-    display: flex;
+    height: 80px !important;
+    border: none !important;
+    outline: none !important;
+    background: #f5f7fb !important;
+    border-radius: 40px !important;
+    display: flex !important;
 
-    align-items: center;
-    justify-content: end;
+    align-items: center !important;
+    justify-content: end !important;
 
-    width: -webkit-fill-available;
+    width: -webkit-fill-available !important;
   }
-
-
-  
-
 
   .input_chat {
     position: relative;
@@ -412,38 +439,28 @@ margin-top: 44px;
     outline: none;
     background: #f5f7fb;
     border-radius: 40px;
-
-    
   }
 
-
-  @media (max-width:500px) {
-    .input_chat{
-
+  @media (max-width: 500px) {
+    .input_chat {
       height: 60px !important;
     }
-    .input_box{
-
+    .input_box {
       height: 60px !important;
     }
 
-::placeholder{
-  font-size: 15px !important;
-}
+    ::placeholder {
+      font-size: 15px !important;
+    }
 
-.mic {
-  width: 50px !important;
-  
-}
+    .mic {
+      width: 50px !important;
+    }
 
-.msent img{
-  width: 30px !important;
-}
-
+    .msent img {
+      width: 30px !important;
+    }
   }
-
-
-
 
   ::placeholder {
     font-family: "Hind";
@@ -460,6 +477,14 @@ margin-top: 44px;
   .mic {
     position: absolute;
     padding-right: 30px;
+  }
+}
+
+.type_sec2 {
+  width: 50%;
+  right: 1%;
+  @media (max-width: 1330px) {
+    width: 45%;
   }
 }
 
@@ -490,6 +515,7 @@ margin-top: 44px;
   .chat_card_img {
     width: 74px !important;
     height: 74px !important;
+    margin-left: 20px;
   }
 }
 @media (max-width: 1240px) {
@@ -528,6 +554,10 @@ margin-top: 44px;
   text-align: center;
 
   color: #4c5854;
+
+  @media (min-width: 990px) and (max-width: 1100px) {
+    width: 100px !important;
+  }
 }
 
 @media (max-width: 530px) {
@@ -550,8 +580,6 @@ margin-top: 44px;
   }
 }
 
-
-
 .dropdown-item {
   display: block;
   width: 100%;
@@ -566,27 +594,94 @@ margin-top: 44px;
   border: 0;
 }
 
-.bbb{
-// display: none;
+.bbb {
+  // display: none;
 }
 
-
-
-.hover_icon{
-
-  display:none;
-
-  
+@media (min-width: 990px) and (max-width: 1100px) {
+  .date-text {
+    font-size: 10px !important;
+  }
+}
+@media (max-width: 990px) {
+  .type_sec2 {
+    width: 100% !important;
+  }
 }
 
+.hover_icon {
+  display: flex;
+  gap: 7px;
+  padding-top: 120px;
+  // padding-left: 0px;
+  justify-content: flex-end;
+  // padding-left: 100px;
+  align-items: flex-end;
 
-// .hover_arrow:hover  .hover_icon {
-//  display:block !important;
- 
-// }
+  @media (min-width: 990px) and (max-width: 1290px) {
+    // padding-left: 30px;
+  }
+}
+.hover_icon1 {
+  display: none;
+}
 
-.hhh:hover  .hover_icon{
+.hover_arrow {
   display: block !important;
-  } 
+}
 
-
+.hhh:hover .hover_icon {
+  display: block !important;
+}
+@media (min-width: 1100px) and (max-width: 1610px) {
+  .img1 img {
+    width: 50px;
+    height: 50px;
+  }
+  .chat_card_heading {
+    font-size: 12px;
+  }
+  .mmtext {
+    margin-left: 5px !important;
+    font-size: 10px !important;
+  }
+  .date {
+    position: absolute;
+    right: 0;
+    padding-right: 10px;
+  }
+  .date-text {
+    font-size: 10px;
+  }
+  .profile-text {
+    padding-left: 2px;
+  }
+  .profile-text h6 {
+    font-size: 11px !important;
+  }
+  .chat_card_img {
+    margin-left: 0px;
+  }
+  .ChartCard {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+  .mmtext {
+    /* margin-left: 5px !important; */
+    font-size: 7px !important;
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+  .date {
+    /* position: absolute; */
+    /* right: 0; */
+    padding-right: 3px;
+  }
+  .bbb img {
+    width: 30px;
+    height: 16px;
+    margin-bottom: 5px;
+  }
+}

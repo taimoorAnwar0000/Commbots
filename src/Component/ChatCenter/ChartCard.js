@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import CardProfile from "../images/cardprofile.png";
 import "./chatcenter.scss";
@@ -13,9 +13,13 @@ import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
 import Date from "../images/dategroup.png";
 const ChartCard = (props) => {
+  const [iconshow, setIconShow] = useState(false);
+  const EnterMouse = () => {
+    setIconShow(true);
+  };
   return (
     <div className="ChartCard">
-      <div>
+      <div className="img1">
         <img
           className="chat_card_img"
           src={props.image}
@@ -27,9 +31,8 @@ const ChartCard = (props) => {
       <div className="profile-text">
         <div className="MM-clothing">
           <div className="chat_card_heading">
-            {" "}
-            <h6>{props.name}</h6>{" "}
-          </div>{" "}
+            <h6>{props.name}</h6>
+          </div>
           <div className="mmtext">MM Clothing</div>
         </div>
 
@@ -37,24 +40,28 @@ const ChartCard = (props) => {
       </div>
 
       <div className="date">
-        {" "}
-        <div className='hhh'>
-          {" "}
-          <KeyboardArrowDownIcon className="hover_arrow" />{" "}
-        </div>{" "}
-        11/02/22{" "}
+        <div className="hhh">
+          <KeyboardArrowDownIcon
+            onMouseEnter={EnterMouse}
+            onMouseLeave={() => {
+              setIconShow(false);
+            }}
+          />
+        </div>
+        <span className="date-text">11/02/22</span>
 
         <div className="bbb">
-        <img src={Date} alt="Girl in a jacket" width="60" height="30" />
+          <img src={Date} alt="Girl in a jacket" width="60" height="30" />
+        </div>
+      </div>
 
-          <div className="hover_icon">
-            <BsArrow90DegRight style={{ color: "#F8D418" }} />
-            <MdPersonOutline /> <AiOutlineFile />
-            <MdOutlineBookmarkBorder />
-            <ImAttachment />
-            <BsShare />
-          </div>{" "}
-        </div>{" "}
+      <div className={iconshow === true ? "hover_icon" : "hover_icon1"}>
+        <BsArrow90DegRight style={{ width: "20px", height: "20px" }} />
+        <MdPersonOutline style={{ width: "20px", height: "20px" }} />{" "}
+        <AiOutlineFile style={{ width: "20px", height: "20px" }} />
+        <MdOutlineBookmarkBorder style={{ width: "20px", height: "20px" }} />
+        <ImAttachment style={{ width: "20px", height: "20px" }} />
+        <BsShare style={{ width: "20px", height: "20px" }} />
       </div>
     </div>
   );
