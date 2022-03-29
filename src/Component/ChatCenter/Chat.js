@@ -216,6 +216,7 @@ const Chat = (props) => {
         })}
 
         {/* voice type section   */}
+<div className="bottom">
 
         <div className={props.state ? " type_sec" : "type_sec type_sec2"}>
           <div className="first_text">
@@ -255,6 +256,11 @@ const Chat = (props) => {
             <img src={msent} onClick={handleclick} />
           </div>
         </div>
+
+
+</div>
+
+
       </div>
     </div>
   );
