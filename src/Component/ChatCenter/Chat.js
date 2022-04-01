@@ -93,7 +93,22 @@ const Chat = (props) => {
         <div className="name">Cameron</div>
         <div className="name">Phyllis Gol.. </div>
       </div>
+
+
+
+
+
+
+
+
+
       <div className="chat_part">
+
+
+<div className="fored">
+
+
+
         <div>
           <div className="message_1">
             <p className="text_1">
@@ -260,8 +275,18 @@ const Chat = (props) => {
 
 </div>
 
+</div>
 
       </div>
+
+
+
+
+
+
+
+
+
     </div>
   );
 };
