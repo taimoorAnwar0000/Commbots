@@ -42,6 +42,7 @@ const ChartCard = (props) => {
       <div className="date">
         <div className="hhh">
           <KeyboardArrowDownIcon
+          className="hhh"
             onMouseEnter={EnterMouse}
             onMouseLeave={() => {
               setIconShow(false);
@@ -53,16 +54,17 @@ const ChartCard = (props) => {
         <div className="bbb">
           <img src={Date} alt="Girl in a jacket" width="60" height="30" />
         </div>
+        <div className={iconshow === true ? "hover_icon" : "hover_icon1"}>
+        <BsArrow90DegRight style={{ width: "18px", height: "18px" }} />
+        <MdPersonOutline style={{ width: "18px", height: "18px" }} />{" "}
+        <AiOutlineFile style={{ width: "18px", height: "18px" }} />
+        <MdOutlineBookmarkBorder style={{ width: "18px", height: "18px" }} />
+        <ImAttachment style={{ width: "18px", height: "18px" }} />
+        <BsShare style={{ width: "18px", height: "18px" }} />
+      </div>
       </div>
 
-      <div className={iconshow === true ? "hover_icon" : "hover_icon1"}>
-        <BsArrow90DegRight style={{ width: "20px", height: "20px" }} />
-        <MdPersonOutline style={{ width: "20px", height: "20px" }} />{" "}
-        <AiOutlineFile style={{ width: "20px", height: "20px" }} />
-        <MdOutlineBookmarkBorder style={{ width: "20px", height: "20px" }} />
-        <ImAttachment style={{ width: "20px", height: "20px" }} />
-        <BsShare style={{ width: "20px", height: "20px" }} />
-      </div>
+     
     </div>
   );
 };

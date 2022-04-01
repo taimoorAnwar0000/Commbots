@@ -36,9 +36,20 @@
   padding-left: 5px;
   padding-right: 5px;
   display: flex;
+  margin-right: 5px;
   align-items: center;
   text-align: center;
   font-size: 12px;
+  width: 105px;
+  @media (max-width: 1100px) {
+  width: 80px !important;
+  }
+  @media(max-width:1200px){
+    width: 65px;
+  }
+  @media (max-width: 990px) {
+  width: 100px !important;
+  }
   @media (max-width: 1340px) {
     margin-left: 5px !important;
     font-size: 10px !important;
@@ -57,20 +68,29 @@
 }
 
 .date {
-  position: absolute;
-  right: 0;
-  padding-right: 10px;
+  display: flex;
+    width: 100%;
+    justify-content: flex-end !important;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 10px;
+@media(max-width:1101px){
+  align-items: center !important;
+}
+@media(max-width:990px){
+  align-items: flex-end !important;
+}
 
   @media (max-width: 1040px) {
     font-size: 10px !important;
   }
 
-  img {
-    @media (max-width: 1240px) {
-      width: 40px !important;
-      height: 20px !important;
-    }
-  }
+  // img {
+  //   @media (max-width: 1240px) {
+  //     width: 40px !important;
+  //     height: 20px !important;
+  //   }
+  // }
 }
 
 .date2 {
@@ -181,6 +201,15 @@
   padding: 15px;
   background-color: white;
   position: relative;
+  height:130px;
+
+@media(max-width:1100px){
+  height: 300px !important;
+}
+@media(max-width:990px){
+  height: 130px !important;
+}
+
   @media (min-width: 990px) and (max-width: 1100px) {
     flex-direction: column;
   }
@@ -313,14 +342,12 @@
   .btn-success {
     width: 0px !important;
     height: 0px !important;
-
     color: black;
     text-align: left;
     background: transparent !important;
     box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.1) !important;
     border: none !important;
   }
-
   .btn-group > .btn-group:not(:last-child) > .btn,
   .btn-group > .btn:not(:last-child):not(.dropdown-toggle) {
     display: none !important;
@@ -441,6 +468,18 @@
     border-radius: 40px;
   }
 
+
+.mic{
+  width: 55px;
+  cursor: pointer;
+}
+
+.msent img {
+  width: 30px !important;
+  cursor: pointer;
+}
+
+
   @media (max-width: 500px) {
     .input_chat {
       height: 60px !important;
@@ -511,18 +550,18 @@
   overflow: hidden;
 }
 
-@media (max-width: 1240px) {
-  .chat_card_img {
-    width: 74px !important;
-    height: 74px !important;
-    margin-left: 20px;
-  }
-}
-@media (max-width: 1240px) {
-  .profile-text h6 {
-    font-size: 11px !important;
-  }
-}
+// @media (max-width: 1240px) {
+//   .chat_card_img {
+//     width: 74px !important;
+//     height: 74px !important;
+//     margin-left: 20px;
+//   }
+// }
+// @media (max-width: 1240px) {
+//   .profile-text h6 {
+//     font-size: 11px !important;
+//   }
+// }
 @media (max-width: 990px) {
   .profile-text h6 {
     font-size: 1rem !important;
@@ -610,13 +649,27 @@
 }
 
 .hover_icon {
+  cursor: pointer;
   display: flex;
+
   gap: 7px;
-  padding-top: 120px;
+  // padding-top: 120px;
   // padding-left: 0px;
   justify-content: flex-end;
   // padding-left: 100px;
   align-items: flex-end;
+width:100%;
+padding-top: 10px;
+
+@media(max-width:1100px){
+  align-items: center !important;
+  justify-content: center !important;
+}
+@media(max-width:990px){
+  justify-content: flex-end !important;
+  
+  align-items: flex-end !important;
+}
 
   @media (min-width: 990px) and (max-width: 1290px) {
     // padding-left: 30px;
@@ -630,7 +683,13 @@
   display: block !important;
 }
 
+.hhh{
+  cursor: pointer !important;
+}
+
+
 .hhh:hover .hover_icon {
+  cursor: pointer !important;
   display: block !important;
 }
 @media (min-width: 1100px) and (max-width: 1610px) {
@@ -642,16 +701,17 @@
     font-size: 12px;
   }
   .mmtext {
+    width: 80px;
     margin-left: 5px !important;
     font-size: 10px !important;
   }
   .date {
-    position: absolute;
-    right: 0;
-    padding-right: 10px;
+    align-items: end !important;
+    margin-left: 10px;
   }
   .date-text {
     font-size: 10px;
+
   }
   .profile-text {
     padding-left: 2px;
